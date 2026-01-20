@@ -1,0 +1,26 @@
+# Core API
+fastapi
+uvicorn
+python-multipart
+requests
+
+# Google / Gmail
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+
+# AI & RAG
+langchain
+langchain-community
+langchain-chroma
+langchain-ollama
+chromadb
+sentence-transformers
+pypdf
+
+# Privacy (PII)
+presidio-analyzer
+presidio-anonymizer
+spacy
+# Note: You also need the model 'en_core_web_lg' or 'en_core_web_sm'
+# Run: python -m spacy download en_core_web_lg
