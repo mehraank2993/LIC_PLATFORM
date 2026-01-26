@@ -12,11 +12,8 @@ from app.database import (
 from app.privacy import redact_pii
 from app.brain import analyze_email
 from app.priority import compute_priority
-<<<<<<< HEAD
 from app.gmail_fetcher import GmailAuthenticator, GmailFetcher
-=======
 from app.reply import generate_reply
->>>>>>> 0f7d90e76912895e1b59ef053aa7c570ab758f6f
 
 # Setup Logging
 logger = logging.getLogger("Worker")
