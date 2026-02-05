@@ -23,9 +23,14 @@ from app.database import (
     get_all_gmail_configs,
     toggle_gmail_sync,
     delete_gmail_config,
-    get_gmail_config_stats
+    delete_gmail_config,
+    get_gmail_config_stats,
+    update_reply_status,
+    log_audit_action,
+    get_db_cursor
 )
 from app.worker import sync_all_gmail_accounts, sync_gmail_account
+from app.gmail_fetcher import setup_gmail_fetcher
 
 # Setup Logging
 logger = logging.getLogger("API")
@@ -52,6 +57,10 @@ class GmailSyncResponse(BaseModel):
     status: str
     message: str
     data: Optional[dict] = None
+
+class ReplyRequest(BaseModel):
+    action: str = Field(..., description="Action to take: 'approve_send' or 'reject'")
+    body: Optional[str] = Field(None, description="Modified reply body (required if action is approve_send)")
 
 # --- Routes ---
 
@@ -237,6 +246,116 @@ def export_csv():
     except Exception as e:
         logger.error(f"Export failed: {e}")
         raise HTTPException(status_code=500, detail="Export failed")
+
+@router.post("/emails/{email_id}/reply", response_model=APIResponse)
+def send_reply_endpoint(email_id: int, request: ReplyRequest):
+    """
+    Human-in-the-loop reply workflow.
+    Allows approving using Gmail API or rejecting a reply.
+    """
+    try:
+        # 1. Fetch Email Data
+        with get_db_cursor() as c:
+            c.execute("SELECT * FROM emails WHERE id = ?", (email_id,))
+            row = c.fetchone()
+            if not row:
+                raise HTTPException(status_code=404, detail="Email not found")
+            email = dict(row)
+
+        # Parse Analysis
+        try:
+            analysis = json.loads(email.get('analysis', '{}'))
+        except:
+            analysis = {}
+        
+        intent = analysis.get('intent', 'UNKNOWN')
+        priority = analysis.get('priority', 'MEDIUM') # Default to MEDIUM if missing, but priority logic usually sets it
+
+        # 2. Safety Checks (BLOCKERS)
+        if request.action == 'approve_send':
+            # Block HIGH priority
+            if priority == 'HIGH':
+                raise HTTPException(status_code=403, detail="Safety Block: HIGH priority emails require manual handling outside system.")
+            
+            # Block Restricted Intents
+            if intent in ["COMPLAINT", "CLAIM_RELATED", "PAYMENT_ISSUE"]:
+                 raise HTTPException(status_code=403, detail=f"Safety Block: Restricted intent '{intent}' cannot be auto-replied.")
+            
+            # Block NO_REPLY (though UI should handle this, double check)
+            if email.get('generated_reply') == "NO_REPLY" and not request.body:
+                 raise HTTPException(status_code=400, detail="Cannot send NO_REPLY draft without human edit.")
+
+        # 3. Handle REJECT
+        if request.action == 'reject':
+            update_reply_status(email_id, 'REJECTED')
+            log_audit_action(email_id, 'REJECTED', details="User rejected AI reply")
+            return {"status": "success", "message": "Reply rejected"}
+
+        # 4. Handle APPROVE_SEND
+        if request.action == 'approve_send':
+            if not request.body:
+                 raise HTTPException(status_code=400, detail="Reply body is required for sending.")
+            
+            # Identify which Gmail account to use
+            # Since we support multiple accounts, we need to know WHICH one received this email.
+            # BUT, our schema doesn't strictly link email -> gmail_config (yet).
+            # For this MVP, we will try to find a gmail config that matches the 'recipient' 
+            # OR just use the first enabled one if we can't determine (User Assumption: Single Tenant or correct routing)
+            # PROPER FIX: We need 'recipient' in emails table.
+            # WORKAROUND: For now, we'll fetch the first enabled Gmail config.
+            
+            configs = get_all_gmail_configs(enabled_only=True)
+            if not configs:
+                raise HTTPException(status_code=400, detail="No enabled Gmail accounts found to send from.")
+            
+            # Ideally pick the one that matches, but lacking that metadata, pick first.
+            config = configs[0] 
+            
+            # Re-hydrate specific auth method needed for setup_gmail_fetcher helper
+            # The helper is a bit rigid, let's manually init if needed or improve helper use
+            # Actually, `config['credentials']` contains the secret.
+            
+            if config['auth_method'] == 'oauth':
+                # credentials is JSON string
+                 # Wait, existing helper has `authenticate_with_oauth_json`. Let's use that directly.
+                 from app.gmail_fetcher import GmailAuthenticator, GmailFetcher
+                 auth = GmailAuthenticator()
+                 service = auth.authenticate_with_oauth_json(config['credentials'], config['gmail_email'])
+                 fetcher = GmailFetcher(service)
+                 
+            elif config['auth_method'] == 'token':
+                 fetcher = setup_gmail_fetcher(auth_method='token', access_token=config['credentials'])
+                 
+            elif config['auth_method'] == 'service_account':
+                 from app.gmail_fetcher import GmailAuthenticator, GmailFetcher
+                 auth = GmailAuthenticator()
+                 service = auth.authenticate_service_account(config['credentials'])
+                 fetcher = GmailFetcher(service)
+            else:
+                 raise HTTPException(status_code=500, detail=f"Unsupported auth method: {config['auth_method']}")
+
+            # Send the reply
+            sent_id = fetcher.send_reply(
+                message_id=email['google_id'],
+                reply_text=request.body,
+                thread_id=None # We don't store threadId yet, relying on messageheaders logic in fetcher
+            )
+            
+            # Update DB
+            update_reply_status(email_id, 'SENT', replied_at=datetime.now())
+            log_audit_action(email_id, 'SENT', details=f"Message-ID: {sent_id}")
+            
+            return {
+                "status": "success", 
+                "message": "Reply sent successfully",
+                "data": {"message_id": sent_id}
+            }
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error processing reply for {email_id}: {e}")
+        raise HTTPException(status_code=500, detail=f"Error: {str(e)}")
 
 
 # ============================================================================

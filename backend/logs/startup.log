@@ -167,3 +167,711 @@ Starting Services...
 [2026-01-28T16:53:57.377211] 
 Starting Services...
 [2026-01-28T16:55:16.019600] DEBUG: API Process Starting...
+[2026-01-29T14:06:21.651446] --------------------------------------------------
+[2026-01-29T14:06:21.652558]    LIC EMAIL INTELLIGENCE PLATFORM (LOCAL)        
+[2026-01-29T14:06:21.653034] --------------------------------------------------
+[2026-01-29T14:06:21.653463] [1/2] Initializing Database...
+[2026-01-29T14:06:21.667119] [2/2] Checking for Policy Documents (RAG)...
+[2026-01-29T14:06:24.744498] 
+Starting Services...
+[2026-01-29T14:06:42.139508] DEBUG: API Process Starting...
+[2026-01-30T12:07:19.819960] Startup failed: Your currently installed version of Keras is Keras 3, but this is not yet supported in Transformers. Please install the backwards-compatible tf-keras package with `pip install tf-keras`.
+[2026-01-30T12:07:19.843735] Traceback (most recent call last):
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\activations_tf.py", line 22, in <module>
+    import tf_keras as keras
+ModuleNotFoundError: No module named 'tf_keras'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\KHAN\.gemini\antigravity\scratch\lic-platform\backend\run.py", line 45, in <module>
+    from app import database, rag
+  File "C:\Users\KHAN\.gemini\antigravity\scratch\lic-platform\backend\app\rag.py", line 7, in <module>
+    from langchain_community.document_loaders import PyPDFLoader, TextLoader
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_community\document_loaders\__init__.py", line 740, in __getattr__
+    module = importlib.import_module(_module_lookup[name])
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 28, in <module>
+    from langchain_community.document_loaders.base import BaseLoader
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_community\document_loaders\base.py", line 1, in <module>
+    from langchain_core.document_loaders import BaseBlobParser, BaseLoader
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_core\document_loaders\__init__.py", line 33, in __getattr__
+    result = import_attr(attr_name, module_name, __spec__.parent)
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_core\_import_utils.py", line 35, in import_attr
+    module = import_module(f".{module_name}", package=package)
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_core\document_loaders\base.py", line 19, in <module>
+    from langchain_text_splitters import RecursiveCharacterTextSplitter
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_text_splitters\__init__.py", line 38, in <module>
+    from langchain_text_splitters.sentence_transformers import (
+        SentenceTransformersTokenTextSplitter,
+    )
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_text_splitters\sentence_transformers.py", line 11, in <module>
+    from sentence_transformers import (  # type: ignore[import-not-found, unused-ignore]
+        SentenceTransformer,
+    )
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\__init__.py", line 15, in <module>
+    from sentence_transformers.cross_encoder import (
+    ...<4 lines>...
+    )
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\cross_encoder\__init__.py", line 3, in <module>
+    from .CrossEncoder import CrossEncoder
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\cross_encoder\CrossEncoder.py", line 35, in <module>
+    from sentence_transformers.cross_encoder.fit_mixin import FitMixin
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\cross_encoder\fit_mixin.py", line 20, in <module>
+    from sentence_transformers.datasets.NoDuplicatesDataLoader import NoDuplicatesDataLoader
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\datasets\__init__.py", line 13, in <module>
+    from .ParallelSentencesDataset import ParallelSentencesDataset
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\datasets\ParallelSentencesDataset.py", line 19, in <module>
+    from sentence_transformers import SentenceTransformer
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\SentenceTransformer.py", line 36, in <module>
+    from sentence_transformers.model_card import SentenceTransformerModelCardData, generate_model_card
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\model_card.py", line 26, in <module>
+    from transformers.integrations import CodeCarbonCallback
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2317, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2347, in _get_module
+    raise e
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2345, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\integrations\integration_utils.py", line 60, in <module>
+    from .. import TFPreTrainedModel
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2317, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2347, in _get_module
+    raise e
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2345, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\modeling_tf_utils.py", line 38, in <module>
+    from .activations_tf import get_tf_activation
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\activations_tf.py", line 27, in <module>
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Your currently installed version of Keras is Keras 3, but this is not yet supported in Transformers. Please install the backwards-compatible tf-keras package with `pip install tf-keras`.
+
+[2026-01-30T12:11:01.522774] Startup failed: Your currently installed version of Keras is Keras 3, but this is not yet supported in Transformers. Please install the backwards-compatible tf-keras package with `pip install tf-keras`.
+[2026-01-30T12:11:01.569975] Traceback (most recent call last):
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\activations_tf.py", line 22, in <module>
+    import tf_keras as keras
+ModuleNotFoundError: No module named 'tf_keras'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\KHAN\.gemini\antigravity\scratch\lic-platform\backend\run.py", line 45, in <module>
+    from app import database, rag
+  File "C:\Users\KHAN\.gemini\antigravity\scratch\lic-platform\backend\app\rag.py", line 7, in <module>
+    from langchain_community.document_loaders import PyPDFLoader, TextLoader
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_community\document_loaders\__init__.py", line 740, in __getattr__
+    module = importlib.import_module(_module_lookup[name])
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 28, in <module>
+    from langchain_community.document_loaders.base import BaseLoader
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_community\document_loaders\base.py", line 1, in <module>
+    from langchain_core.document_loaders import BaseBlobParser, BaseLoader
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_core\document_loaders\__init__.py", line 33, in __getattr__
+    result = import_attr(attr_name, module_name, __spec__.parent)
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_core\_import_utils.py", line 35, in import_attr
+    module = import_module(f".{module_name}", package=package)
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_core\document_loaders\base.py", line 19, in <module>
+    from langchain_text_splitters import RecursiveCharacterTextSplitter
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_text_splitters\__init__.py", line 38, in <module>
+    from langchain_text_splitters.sentence_transformers import (
+        SentenceTransformersTokenTextSplitter,
+    )
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_text_splitters\sentence_transformers.py", line 11, in <module>
+    from sentence_transformers import (  # type: ignore[import-not-found, unused-ignore]
+        SentenceTransformer,
+    )
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\__init__.py", line 15, in <module>
+    from sentence_transformers.cross_encoder import (
+    ...<4 lines>...
+    )
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\cross_encoder\__init__.py", line 3, in <module>
+    from .CrossEncoder import CrossEncoder
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\cross_encoder\CrossEncoder.py", line 35, in <module>
+    from sentence_transformers.cross_encoder.fit_mixin import FitMixin
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\cross_encoder\fit_mixin.py", line 20, in <module>
+    from sentence_transformers.datasets.NoDuplicatesDataLoader import NoDuplicatesDataLoader
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\datasets\__init__.py", line 13, in <module>
+    from .ParallelSentencesDataset import ParallelSentencesDataset
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\datasets\ParallelSentencesDataset.py", line 19, in <module>
+    from sentence_transformers import SentenceTransformer
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\SentenceTransformer.py", line 36, in <module>
+    from sentence_transformers.model_card import SentenceTransformerModelCardData, generate_model_card
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\model_card.py", line 26, in <module>
+    from transformers.integrations import CodeCarbonCallback
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2317, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2347, in _get_module
+    raise e
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2345, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\integrations\integration_utils.py", line 60, in <module>
+    from .. import TFPreTrainedModel
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2317, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2347, in _get_module
+    raise e
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2345, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\modeling_tf_utils.py", line 38, in <module>
+    from .activations_tf import get_tf_activation
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\activations_tf.py", line 27, in <module>
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Your currently installed version of Keras is Keras 3, but this is not yet supported in Transformers. Please install the backwards-compatible tf-keras package with `pip install tf-keras`.
+
+[2026-01-30T12:16:55.141490] Startup failed: Your currently installed version of Keras is Keras 3, but this is not yet supported in Transformers. Please install the backwards-compatible tf-keras package with `pip install tf-keras`.
+[2026-01-30T12:16:55.156960] Traceback (most recent call last):
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\activations_tf.py", line 22, in <module>
+    import tf_keras as keras
+ModuleNotFoundError: No module named 'tf_keras'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\KHAN\.gemini\antigravity\scratch\lic-platform\backend\run.py", line 45, in <module>
+    from app import database, rag
+  File "C:\Users\KHAN\.gemini\antigravity\scratch\lic-platform\backend\app\rag.py", line 7, in <module>
+    from langchain_community.document_loaders import PyPDFLoader, TextLoader
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_community\document_loaders\__init__.py", line 740, in __getattr__
+    module = importlib.import_module(_module_lookup[name])
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 28, in <module>
+    from langchain_community.document_loaders.base import BaseLoader
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_community\document_loaders\base.py", line 1, in <module>
+    from langchain_core.document_loaders import BaseBlobParser, BaseLoader
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_core\document_loaders\__init__.py", line 33, in __getattr__
+    result = import_attr(attr_name, module_name, __spec__.parent)
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_core\_import_utils.py", line 35, in import_attr
+    module = import_module(f".{module_name}", package=package)
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_core\document_loaders\base.py", line 19, in <module>
+    from langchain_text_splitters import RecursiveCharacterTextSplitter
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_text_splitters\__init__.py", line 38, in <module>
+    from langchain_text_splitters.sentence_transformers import (
+        SentenceTransformersTokenTextSplitter,
+    )
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_text_splitters\sentence_transformers.py", line 11, in <module>
+    from sentence_transformers import (  # type: ignore[import-not-found, unused-ignore]
+        SentenceTransformer,
+    )
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\__init__.py", line 15, in <module>
+    from sentence_transformers.cross_encoder import (
+    ...<4 lines>...
+    )
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\cross_encoder\__init__.py", line 3, in <module>
+    from .CrossEncoder import CrossEncoder
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\cross_encoder\CrossEncoder.py", line 35, in <module>
+    from sentence_transformers.cross_encoder.fit_mixin import FitMixin
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\cross_encoder\fit_mixin.py", line 20, in <module>
+    from sentence_transformers.datasets.NoDuplicatesDataLoader import NoDuplicatesDataLoader
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\datasets\__init__.py", line 13, in <module>
+    from .ParallelSentencesDataset import ParallelSentencesDataset
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\datasets\ParallelSentencesDataset.py", line 19, in <module>
+    from sentence_transformers import SentenceTransformer
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\SentenceTransformer.py", line 36, in <module>
+    from sentence_transformers.model_card import SentenceTransformerModelCardData, generate_model_card
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\model_card.py", line 26, in <module>
+    from transformers.integrations import CodeCarbonCallback
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2317, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2347, in _get_module
+    raise e
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2345, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\integrations\integration_utils.py", line 60, in <module>
+    from .. import TFPreTrainedModel
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2317, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2347, in _get_module
+    raise e
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2345, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\modeling_tf_utils.py", line 38, in <module>
+    from .activations_tf import get_tf_activation
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\activations_tf.py", line 27, in <module>
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Your currently installed version of Keras is Keras 3, but this is not yet supported in Transformers. Please install the backwards-compatible tf-keras package with `pip install tf-keras`.
+
+[2026-01-30T12:25:16.102879] Startup failed: Your currently installed version of Keras is Keras 3, but this is not yet supported in Transformers. Please install the backwards-compatible tf-keras package with `pip install tf-keras`.
+[2026-01-30T12:25:16.113832] Traceback (most recent call last):
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\activations_tf.py", line 22, in <module>
+    import tf_keras as keras
+ModuleNotFoundError: No module named 'tf_keras'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\KHAN\.gemini\antigravity\scratch\lic-platform\backend\run.py", line 45, in <module>
+    from app import database, rag
+  File "C:\Users\KHAN\.gemini\antigravity\scratch\lic-platform\backend\app\rag.py", line 7, in <module>
+    from langchain_community.document_loaders import PyPDFLoader, TextLoader
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_community\document_loaders\__init__.py", line 740, in __getattr__
+    module = importlib.import_module(_module_lookup[name])
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 28, in <module>
+    from langchain_community.document_loaders.base import BaseLoader
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_community\document_loaders\base.py", line 1, in <module>
+    from langchain_core.document_loaders import BaseBlobParser, BaseLoader
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_core\document_loaders\__init__.py", line 33, in __getattr__
+    result = import_attr(attr_name, module_name, __spec__.parent)
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_core\_import_utils.py", line 35, in import_attr
+    module = import_module(f".{module_name}", package=package)
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_core\document_loaders\base.py", line 19, in <module>
+    from langchain_text_splitters import RecursiveCharacterTextSplitter
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_text_splitters\__init__.py", line 38, in <module>
+    from langchain_text_splitters.sentence_transformers import (
+        SentenceTransformersTokenTextSplitter,
+    )
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_text_splitters\sentence_transformers.py", line 11, in <module>
+    from sentence_transformers import (  # type: ignore[import-not-found, unused-ignore]
+        SentenceTransformer,
+    )
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\__init__.py", line 15, in <module>
+    from sentence_transformers.cross_encoder import (
+    ...<4 lines>...
+    )
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\cross_encoder\__init__.py", line 3, in <module>
+    from .CrossEncoder import CrossEncoder
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\cross_encoder\CrossEncoder.py", line 35, in <module>
+    from sentence_transformers.cross_encoder.fit_mixin import FitMixin
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\cross_encoder\fit_mixin.py", line 20, in <module>
+    from sentence_transformers.datasets.NoDuplicatesDataLoader import NoDuplicatesDataLoader
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\datasets\__init__.py", line 13, in <module>
+    from .ParallelSentencesDataset import ParallelSentencesDataset
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\datasets\ParallelSentencesDataset.py", line 19, in <module>
+    from sentence_transformers import SentenceTransformer
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\SentenceTransformer.py", line 36, in <module>
+    from sentence_transformers.model_card import SentenceTransformerModelCardData, generate_model_card
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\model_card.py", line 26, in <module>
+    from transformers.integrations import CodeCarbonCallback
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2317, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2347, in _get_module
+    raise e
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2345, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\integrations\integration_utils.py", line 60, in <module>
+    from .. import TFPreTrainedModel
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2317, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2347, in _get_module
+    raise e
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2345, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\modeling_tf_utils.py", line 38, in <module>
+    from .activations_tf import get_tf_activation
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\activations_tf.py", line 27, in <module>
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Your currently installed version of Keras is Keras 3, but this is not yet supported in Transformers. Please install the backwards-compatible tf-keras package with `pip install tf-keras`.
+
+[2026-01-30T12:29:24.762168] Startup failed: Your currently installed version of Keras is Keras 3, but this is not yet supported in Transformers. Please install the backwards-compatible tf-keras package with `pip install tf-keras`.
+[2026-01-30T12:29:24.773478] Traceback (most recent call last):
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\activations_tf.py", line 22, in <module>
+    import tf_keras as keras
+ModuleNotFoundError: No module named 'tf_keras'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\KHAN\.gemini\antigravity\scratch\lic-platform\backend\run.py", line 45, in <module>
+    from app import database, rag
+  File "C:\Users\KHAN\.gemini\antigravity\scratch\lic-platform\backend\app\rag.py", line 7, in <module>
+    from langchain_community.document_loaders import PyPDFLoader, TextLoader
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_community\document_loaders\__init__.py", line 740, in __getattr__
+    module = importlib.import_module(_module_lookup[name])
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 28, in <module>
+    from langchain_community.document_loaders.base import BaseLoader
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_community\document_loaders\base.py", line 1, in <module>
+    from langchain_core.document_loaders import BaseBlobParser, BaseLoader
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_core\document_loaders\__init__.py", line 33, in __getattr__
+    result = import_attr(attr_name, module_name, __spec__.parent)
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_core\_import_utils.py", line 35, in import_attr
+    module = import_module(f".{module_name}", package=package)
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_core\document_loaders\base.py", line 19, in <module>
+    from langchain_text_splitters import RecursiveCharacterTextSplitter
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_text_splitters\__init__.py", line 38, in <module>
+    from langchain_text_splitters.sentence_transformers import (
+        SentenceTransformersTokenTextSplitter,
+    )
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_text_splitters\sentence_transformers.py", line 11, in <module>
+    from sentence_transformers import (  # type: ignore[import-not-found, unused-ignore]
+        SentenceTransformer,
+    )
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\__init__.py", line 15, in <module>
+    from sentence_transformers.cross_encoder import (
+    ...<4 lines>...
+    )
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\cross_encoder\__init__.py", line 3, in <module>
+    from .CrossEncoder import CrossEncoder
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\cross_encoder\CrossEncoder.py", line 35, in <module>
+    from sentence_transformers.cross_encoder.fit_mixin import FitMixin
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\cross_encoder\fit_mixin.py", line 20, in <module>
+    from sentence_transformers.datasets.NoDuplicatesDataLoader import NoDuplicatesDataLoader
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\datasets\__init__.py", line 13, in <module>
+    from .ParallelSentencesDataset import ParallelSentencesDataset
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\datasets\ParallelSentencesDataset.py", line 19, in <module>
+    from sentence_transformers import SentenceTransformer
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\SentenceTransformer.py", line 36, in <module>
+    from sentence_transformers.model_card import SentenceTransformerModelCardData, generate_model_card
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\model_card.py", line 26, in <module>
+    from transformers.integrations import CodeCarbonCallback
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2317, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2347, in _get_module
+    raise e
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2345, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\integrations\integration_utils.py", line 60, in <module>
+    from .. import TFPreTrainedModel
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2317, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2347, in _get_module
+    raise e
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2345, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\modeling_tf_utils.py", line 38, in <module>
+    from .activations_tf import get_tf_activation
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\activations_tf.py", line 27, in <module>
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Your currently installed version of Keras is Keras 3, but this is not yet supported in Transformers. Please install the backwards-compatible tf-keras package with `pip install tf-keras`.
+
+[2026-01-30T12:30:56.678723] Startup failed: Your currently installed version of Keras is Keras 3, but this is not yet supported in Transformers. Please install the backwards-compatible tf-keras package with `pip install tf-keras`.
+[2026-01-30T12:30:56.694163] Traceback (most recent call last):
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\activations_tf.py", line 22, in <module>
+    import tf_keras as keras
+ModuleNotFoundError: No module named 'tf_keras'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\KHAN\.gemini\antigravity\scratch\lic-platform\backend\run.py", line 45, in <module>
+    from app import database, rag
+  File "C:\Users\KHAN\.gemini\antigravity\scratch\lic-platform\backend\app\rag.py", line 7, in <module>
+    from langchain_community.document_loaders import PyPDFLoader, TextLoader
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_community\document_loaders\__init__.py", line 740, in __getattr__
+    module = importlib.import_module(_module_lookup[name])
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 28, in <module>
+    from langchain_community.document_loaders.base import BaseLoader
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_community\document_loaders\base.py", line 1, in <module>
+    from langchain_core.document_loaders import BaseBlobParser, BaseLoader
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_core\document_loaders\__init__.py", line 33, in __getattr__
+    result = import_attr(attr_name, module_name, __spec__.parent)
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_core\_import_utils.py", line 35, in import_attr
+    module = import_module(f".{module_name}", package=package)
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_core\document_loaders\base.py", line 19, in <module>
+    from langchain_text_splitters import RecursiveCharacterTextSplitter
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_text_splitters\__init__.py", line 38, in <module>
+    from langchain_text_splitters.sentence_transformers import (
+        SentenceTransformersTokenTextSplitter,
+    )
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_text_splitters\sentence_transformers.py", line 11, in <module>
+    from sentence_transformers import (  # type: ignore[import-not-found, unused-ignore]
+        SentenceTransformer,
+    )
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\__init__.py", line 15, in <module>
+    from sentence_transformers.cross_encoder import (
+    ...<4 lines>...
+    )
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\cross_encoder\__init__.py", line 3, in <module>
+    from .CrossEncoder import CrossEncoder
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\cross_encoder\CrossEncoder.py", line 35, in <module>
+    from sentence_transformers.cross_encoder.fit_mixin import FitMixin
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\cross_encoder\fit_mixin.py", line 20, in <module>
+    from sentence_transformers.datasets.NoDuplicatesDataLoader import NoDuplicatesDataLoader
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\datasets\__init__.py", line 13, in <module>
+    from .ParallelSentencesDataset import ParallelSentencesDataset
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\datasets\ParallelSentencesDataset.py", line 19, in <module>
+    from sentence_transformers import SentenceTransformer
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\SentenceTransformer.py", line 36, in <module>
+    from sentence_transformers.model_card import SentenceTransformerModelCardData, generate_model_card
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\sentence_transformers\model_card.py", line 26, in <module>
+    from transformers.integrations import CodeCarbonCallback
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2317, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2347, in _get_module
+    raise e
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2345, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\integrations\integration_utils.py", line 60, in <module>
+    from .. import TFPreTrainedModel
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2317, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2347, in _get_module
+    raise e
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\utils\import_utils.py", line 2345, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\modeling_tf_utils.py", line 38, in <module>
+    from .activations_tf import get_tf_activation
+  File "C:\Users\KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\activations_tf.py", line 27, in <module>
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Your currently installed version of Keras is Keras 3, but this is not yet supported in Transformers. Please install the backwards-compatible tf-keras package with `pip install tf-keras`.
+
+[2026-01-30T12:37:29.191857] --------------------------------------------------
+[2026-01-30T12:37:29.193380]    LIC EMAIL INTELLIGENCE PLATFORM (LOCAL)        
+[2026-01-30T12:37:29.194126] --------------------------------------------------
+[2026-01-30T12:37:29.195353] [1/2] Initializing Database...
+[2026-01-30T12:37:29.226991] [2/2] Checking for Policy Documents (RAG)...
+[2026-01-30T12:37:30.932594] 
+Starting Services...
+[2026-01-30T12:37:47.089049] DEBUG: API Process Starting...
+[2026-01-30T13:20:24.663394] 
+Stopping services...
+[2026-01-30T13:20:25.147112] All services stopped.
+[2026-01-31T10:10:17.063446] --------------------------------------------------
+[2026-01-31T10:10:17.064890]    LIC EMAIL INTELLIGENCE PLATFORM (LOCAL)        
+[2026-01-31T10:10:17.066046] --------------------------------------------------
+[2026-01-31T10:10:17.067016] [1/2] Initializing Database...
+[2026-01-31T10:10:17.094531] [2/2] Checking for Policy Documents (RAG)...
+[2026-01-31T10:10:26.920376] 
+Starting Services...
+[2026-01-31T10:11:08.869231] DEBUG: API Process Starting...
+[2026-01-31T10:11:12.874560] --------------------------------------------------
+[2026-01-31T10:11:12.876430]    LIC EMAIL INTELLIGENCE PLATFORM (LOCAL)        
+[2026-01-31T10:11:12.878287] --------------------------------------------------
+[2026-01-31T10:11:12.880108] [1/2] Initializing Database...
+[2026-01-31T10:11:12.895738] [2/2] Checking for Policy Documents (RAG)...
+[2026-01-31T10:11:24.100430] 
+Starting Services...
+[2026-01-31T10:12:04.601610] DEBUG: API Process Starting...
+[2026-01-31T10:12:13.170380] API Server died!
+[2026-01-31T10:12:13.362324] All services stopped.
+[2026-02-02T16:04:30.349077] --------------------------------------------------
+[2026-02-02T16:04:30.350959]    LIC EMAIL INTELLIGENCE PLATFORM (LOCAL)        
+[2026-02-02T16:04:30.351940] --------------------------------------------------
+[2026-02-02T16:04:30.353010] [1/2] Initializing Database...
+[2026-02-02T16:04:30.363387] [2/2] Checking for Policy Documents (RAG)...
+[2026-02-02T16:04:32.849522] 
+Starting Services...
+[2026-02-02T16:04:51.875807] DEBUG: API Process Starting...
+[2026-02-04T15:10:51.540581] Startup failed: unexpected indent (database.py, line 268)
+[2026-02-04T15:10:51.541893] Traceback (most recent call last):
+  File "C:\Users\KHAN\.gemini\antigravity\scratch\lic-platform\backend\run.py", line 45, in <module>
+    from app import database, rag
+  File "C:\Users\KHAN\.gemini\antigravity\scratch\lic-platform\backend\app\database.py", line 268
+    WHERE id = ?
+IndentationError: unexpected indent
+
+[2026-02-04T15:13:46.277303] --------------------------------------------------
+[2026-02-04T15:13:46.278350]    LIC EMAIL INTELLIGENCE PLATFORM (LOCAL)        
+[2026-02-04T15:13:46.279488] --------------------------------------------------
+[2026-02-04T15:13:46.280406] [1/2] Initializing Database...
+[2026-02-04T15:13:46.295687] [2/2] Checking for Policy Documents (RAG)...
+[2026-02-04T15:13:52.455800] 
+Starting Services...
+[2026-02-04T15:14:08.899700] DEBUG: API Process Starting...
+[2026-02-04T15:32:16.309095] 
+Stopping services...
+[2026-02-04T15:32:16.513260] All services stopped.
+[2026-02-04T15:32:50.697990] --------------------------------------------------
+[2026-02-04T15:32:50.699079]    LIC EMAIL INTELLIGENCE PLATFORM (LOCAL)        
+[2026-02-04T15:32:50.700072] --------------------------------------------------
+[2026-02-04T15:32:50.700867] [1/2] Initializing Database...
+[2026-02-04T15:32:50.706345] [2/2] Checking for Policy Documents (RAG)...
+[2026-02-04T15:32:51.731372] 
+Starting Services...
+[2026-02-04T15:33:04.207735] DEBUG: API Process Starting...
+[2026-02-04T15:44:46.128235] 
+Stopping services...
+[2026-02-04T15:44:46.286047] All services stopped.
+[2026-02-04T15:45:06.929689] --------------------------------------------------
+[2026-02-04T15:45:06.930864]    LIC EMAIL INTELLIGENCE PLATFORM (LOCAL)        
+[2026-02-04T15:45:06.932231] --------------------------------------------------
+[2026-02-04T15:45:06.933554] [1/2] Initializing Database...
+[2026-02-04T15:45:06.942232] [2/2] Checking for Policy Documents (RAG)...
+[2026-02-04T15:45:08.078452] 
+Starting Services...
+[2026-02-04T15:45:21.795786] DEBUG: API Process Starting...
+[2026-02-04T15:48:54.645106] 
+Stopping services...
+[2026-02-04T15:48:55.283068] All services stopped.
+[2026-02-04T15:51:36.355564] --------------------------------------------------
+[2026-02-04T15:51:36.358455]    LIC EMAIL INTELLIGENCE PLATFORM (LOCAL)        
+[2026-02-04T15:51:36.361388] --------------------------------------------------
+[2026-02-04T15:51:36.363485] [1/2] Initializing Database...
+[2026-02-04T15:51:36.381871] [2/2] Checking for Policy Documents (RAG)...
+[2026-02-04T15:51:42.294965] 
+Starting Services...
+[2026-02-04T15:53:09.263796] DEBUG: API Process Starting...
+[2026-02-04T16:01:11.851426] 
+Stopping services...
+[2026-02-04T16:01:12.339773] All services stopped.
+[2026-02-04T16:02:09.473945] --------------------------------------------------
+[2026-02-04T16:02:09.476195]    LIC EMAIL INTELLIGENCE PLATFORM (LOCAL)        
+[2026-02-04T16:02:09.477768] --------------------------------------------------
+[2026-02-04T16:02:09.479083] [1/2] Initializing Database...
+[2026-02-04T16:02:09.490890] [2/2] Checking for Policy Documents (RAG)...
+[2026-02-04T16:02:15.738985] 
+Starting Services...
+[2026-02-04T16:04:13.017069] 
+Stopping services...
+[2026-02-04T16:04:14.059574] All services stopped.
+[2026-02-04T16:04:31.264299] --------------------------------------------------
+[2026-02-04T16:04:31.264980]    LIC EMAIL INTELLIGENCE PLATFORM (LOCAL)        
+[2026-02-04T16:04:31.265586] --------------------------------------------------
+[2026-02-04T16:04:31.266033] [1/2] Initializing Database...
+[2026-02-04T16:04:31.269651] [2/2] Checking for Policy Documents (RAG)... (SKIPPED)
+[2026-02-04T16:04:31.270078] 
+Starting Services...
+[2026-02-04T16:04:54.741835] DEBUG: API Process Starting...
+[2026-02-04T16:05:15.986130] 
+Stopping services...
+[2026-02-04T16:05:16.143658] All services stopped.
+[2026-02-04T16:05:31.433918] --------------------------------------------------
+[2026-02-04T16:05:31.434690]    LIC EMAIL INTELLIGENCE PLATFORM (LOCAL)        
+[2026-02-04T16:05:31.435246] --------------------------------------------------
+[2026-02-04T16:05:31.435963] [1/2] Initializing Database...
+[2026-02-04T16:05:31.442604] [2/2] Checking for Policy Documents (RAG)... (SKIPPED)
+[2026-02-04T16:05:31.443202] 
+Starting Services...
+[2026-02-04T16:05:53.354523] DEBUG: API Process Starting...
+[2026-02-04T16:28:38.807003] 
+Stopping services...
+[2026-02-04T16:28:39.136384] All services stopped.
+[2026-02-04T16:29:58.904996] --------------------------------------------------
+[2026-02-04T16:29:58.907135]    LIC EMAIL INTELLIGENCE PLATFORM (LOCAL)        
+[2026-02-04T16:29:58.910035] --------------------------------------------------
+[2026-02-04T16:29:58.913725] [1/2] Initializing Database...
+[2026-02-04T16:29:58.952211] [2/2] Checking for Policy Documents (RAG)...
+[2026-02-04T16:30:05.115698] 
+Starting Services...
+[2026-02-04T16:32:02.275138] DEBUG: API Process Starting...
+[2026-02-04T16:34:14.744098] 
+Stopping services...
+[2026-02-04T16:34:16.204652] All services stopped.
+[2026-02-04T16:35:40.114387] --------------------------------------------------
+[2026-02-04T16:35:40.118388]    LIC EMAIL INTELLIGENCE PLATFORM (LOCAL)        
+[2026-02-04T16:35:40.122953] --------------------------------------------------
+[2026-02-04T16:35:40.125195] [1/2] Initializing Database...
+[2026-02-04T16:35:40.139759] [2/2] Checking for Policy Documents (RAG)...
+[2026-02-04T16:35:46.595867] 
+Starting Services...
+[2026-02-04T16:37:44.687051] DEBUG: API Process Starting...
+[2026-02-04T16:40:15.017647] 
+Stopping services...
+[2026-02-04T16:40:15.164477] All services stopped.
+[2026-02-04T16:40:34.406083] --------------------------------------------------
+[2026-02-04T16:40:34.406928]    LIC EMAIL INTELLIGENCE PLATFORM (LOCAL)        
+[2026-02-04T16:40:34.407538] --------------------------------------------------
+[2026-02-04T16:40:34.408256] [1/2] Initializing Database...
+[2026-02-04T16:40:34.412512] [2/2] Checking for Policy Documents (RAG)...
+[2026-02-04T16:40:35.603821] 
+Starting Services...
+[2026-02-04T16:41:00.618105] DEBUG: API Process Starting...
+[2026-02-04T16:46:37.414326] 
+Stopping services...
+[2026-02-04T16:46:37.536909] All services stopped.

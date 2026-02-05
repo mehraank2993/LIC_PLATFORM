@@ -21,3 +21,8 @@ presidio-anonymizer
 spacy
 # Note: You also need the model 'en_core_web_lg' or 'en_core_web_sm'
 # Run: python -m spacy download en_core_web_lg
+
+# Gmail API
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib

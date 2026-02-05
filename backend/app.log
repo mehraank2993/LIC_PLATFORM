@@ -10112,3 +10112,1574 @@
 2026-01-28 17:01:08,523 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
 2026-01-28 17:01:08,531 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
 2026-01-28 17:01:08,532 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 14:06:42,091 - Worker - INFO - Starting ETL Worker...
+2026-01-29 14:06:42,110 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 14:06:42,110 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 14:06:42,111 - GmailFetcher - INFO - Access token expired for licinsurance04@gmail.com, refreshing...
+2026-01-29 14:06:42,249 - Main - INFO - Application starting up...
+2026-01-29 14:06:42,250 - Main - INFO - Initializing Database...
+2026-01-29 14:06:42,250 - Database - INFO - Initializing database at C:\Users\KHAN\.gemini\antigravity\scratch\lic-platform\backend\data\emails.db
+2026-01-29 14:06:42,255 - Database - INFO - Database initialized successfully
+2026-01-29 14:06:42,257 - Main - INFO - Checking for Policy Documents (RAG)...
+2026-01-29 14:06:42,259 - RAG - INFO - Loading Embedding Model (gemma2:2b)...
+2026-01-29 14:06:43,613 - GmailFetcher - INFO - Token refreshed successfully for licinsurance04@gmail.com
+2026-01-29 14:06:43,625 - Database - INFO - Gmail config saved for licinsurance04@gmail.com
+2026-01-29 14:06:43,636 - GmailFetcher - INFO - Updated credentials saved for licinsurance04@gmail.com
+2026-01-29 14:06:43,647 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 14:06:43,653 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 14:06:43,654 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 14:06:45,130 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-01-29 14:06:45,554 - RAG - INFO - Vector store already contains documents. Skipping re-ingestion.
+2026-01-29 14:06:45,555 - Main - INFO - Email processing worker task created
+2026-01-29 14:06:45,762 - GmailFetcher - INFO - Found 13 unread emails
+2026-01-29 14:06:46,563 - Main - INFO - Starting email processing worker...
+2026-01-29 14:06:46,563 - Worker - INFO - Starting ETL Worker...
+2026-01-29 14:06:46,570 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 14:06:46,571 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 14:06:46,575 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 14:06:46,579 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 14:06:46,580 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 14:06:47,646 - GmailFetcher - INFO - Found 13 unread emails
+2026-01-29 14:06:50,509 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 14:06:50,514 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 14:06:50,514 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 14:06:52,235 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 14:06:52,240 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 14:06:52,241 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 14:12:20,417 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 14:12:20,418 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 14:12:20,423 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 14:12:20,426 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 14:12:20,427 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 14:12:22,187 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 14:12:22,189 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 14:12:22,194 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 14:12:22,200 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 14:12:22,203 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 14:12:22,228 - GmailFetcher - INFO - Found 13 unread emails
+2026-01-29 14:12:24,140 - GmailFetcher - INFO - Found 13 unread emails
+2026-01-29 14:12:26,986 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 14:12:27,000 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 14:12:27,001 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 14:12:28,787 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 14:12:28,810 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 14:12:28,812 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 14:17:27,066 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 14:17:27,068 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 14:17:27,072 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 14:17:27,078 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 14:17:27,081 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 14:17:28,869 - GmailFetcher - INFO - Found 13 unread emails
+2026-01-29 14:17:28,911 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 14:17:28,914 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 14:17:28,922 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 14:17:28,926 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 14:17:28,926 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 14:17:30,574 - GmailFetcher - INFO - Found 13 unread emails
+2026-01-29 14:17:33,700 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 14:17:33,728 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 14:17:33,731 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 14:17:35,128 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 14:17:35,142 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 14:17:35,145 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 14:22:33,891 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 14:22:33,892 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 14:22:33,897 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 14:22:33,903 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 14:22:33,904 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 14:22:35,235 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 14:22:35,236 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 14:22:35,241 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 14:22:35,246 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 14:22:35,254 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 14:22:35,891 - GmailFetcher - INFO - Found 13 unread emails
+2026-01-29 14:22:36,946 - GmailFetcher - INFO - Found 13 unread emails
+2026-01-29 14:22:41,239 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 14:22:41,251 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 14:22:41,253 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 14:22:42,149 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 14:22:42,168 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 14:22:42,169 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 14:27:41,329 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 14:27:41,344 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 14:27:41,357 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 14:27:41,367 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 14:27:41,367 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 14:27:42,236 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 14:27:42,237 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 14:27:42,241 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 14:27:42,254 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 14:27:42,255 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 14:27:43,075 - GmailFetcher - INFO - Found 13 unread emails
+2026-01-29 14:27:43,925 - GmailFetcher - INFO - Found 13 unread emails
+2026-01-29 14:27:47,660 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 14:27:47,674 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 14:27:47,675 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 14:27:48,480 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 14:27:48,493 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 14:27:48,496 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 14:32:47,731 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 14:32:47,732 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 14:32:47,737 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 14:32:47,743 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 14:32:47,745 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 14:32:48,567 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 14:32:48,568 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 14:32:48,574 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 14:32:48,587 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 14:32:48,594 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 14:32:49,757 - GmailFetcher - INFO - Found 15 unread emails
+2026-01-29 14:32:50,573 - GmailFetcher - INFO - Found 15 unread emails
+2026-01-29 14:32:55,076 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 2 emails saved
+2026-01-29 14:32:55,088 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 14:32:55,089 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 14:32:55,110 - Worker - INFO - Processing Email ID: 456 - Subject: Policy Document Not Received
+2026-01-29 14:32:55,547 - Brain - INFO - Initializing LLM Chain (gemma2:2b)...
+2026-01-29 14:32:57,872 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 14:32:57,887 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 14:32:57,888 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 14:32:57,909 - Worker - INFO - Processing Email ID: 457 - Subject: Death Claim Documentation Issue
+2026-01-29 14:32:58,357 - Brain - INFO - Initializing LLM Chain (gemma2:2b)...
+2026-01-29 14:32:58,748 - RAG - INFO - Loading Embedding Model (gemma2:2b)...
+2026-01-29 14:33:02,008 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-01-29 14:33:02,082 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 14:33:02,451 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 14:33:23,425 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 14:33:40,833 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 14:35:38,381 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 14:35:53,296 - Brain - INFO - Analysis complete.
+2026-01-29 14:35:53,329 - Worker - INFO - Email 457 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 14:35:53,333 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: HARD_BLOCK_KEYWORD (Contains hard block keyword) | Details: keyword=claim, intent=REQUEST
+2026-01-29 14:35:53,393 - Worker - INFO - Email 457 completed. Intent: REQUEST
+2026-01-29 14:37:22,916 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 14:37:39,791 - Brain - INFO - Analysis complete.
+2026-01-29 14:37:39,839 - Worker - INFO - Email 456 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEGATIVE, Keyword: update)
+2026-01-29 14:37:39,897 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: SOFT_INDICATOR_WITH_RISK (Contains soft indicator with negative sentiment or urgency) | Details: reason='deadline' + negative sentiment, sentiment=NEGATIVE
+2026-01-29 14:37:39,944 - Worker - INFO - Email 456 completed. Intent: REQUEST
+2026-01-29 14:37:49,514 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 14:37:49,519 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 14:37:49,528 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 14:37:49,545 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 14:37:49,554 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 14:37:52,117 - GmailFetcher - INFO - Found 21 unread emails
+2026-01-29 14:37:59,505 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 6 emails saved
+2026-01-29 14:37:59,517 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 14:37:59,517 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 14:37:59,538 - Worker - INFO - Processing Email ID: 486 - Subject: Address Change Confirmation - Policy #393144294
+2026-01-29 14:37:59,637 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 14:38:05,117 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 14:38:23,433 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 14:38:23,436 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 14:38:23,444 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 14:38:23,457 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 14:38:23,458 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 14:38:26,737 - GmailFetcher - INFO - Found 22 unread emails
+2026-01-29 14:38:37,304 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 1 emails saved
+2026-01-29 14:38:37,360 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 14:38:37,361 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 14:38:37,406 - Worker - INFO - Processing Email ID: 487 - Subject: Loan Against Policy Request - Policy #978437079
+2026-01-29 14:38:37,594 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 14:39:53,657 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 14:40:07,902 - Brain - INFO - Analysis complete.
+2026-01-29 14:40:07,936 - Worker - INFO - Email 486 - Priority: MEDIUM (Intent: POLICY_UPDATE, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 14:40:07,940 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: PATTERN_NOT_FOUND (Intent does not map to a safe pattern) | Details: intent=POLICY_UPDATE
+2026-01-29 14:40:07,981 - Worker - INFO - Email 486 completed. Intent: POLICY_UPDATE
+2026-01-29 14:40:08,003 - Worker - INFO - Processing Email ID: 488 - Subject: Overdue Premium Payment - Request for Extension
+2026-01-29 14:40:08,271 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 14:40:12,902 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 14:40:26,298 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 14:42:12,299 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 14:42:25,445 - Brain - INFO - Analysis complete.
+2026-01-29 14:42:25,448 - Worker - INFO - Email 487 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 14:42:28,760 - ReplyGenerator - INFO - Generating reply: Pattern=PATTERN_A, Intent=REQUEST, Priority=MEDIUM
+2026-01-29 14:43:42,109 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 14:43:54,684 - Brain - INFO - Analysis complete.
+2026-01-29 14:43:54,685 - Worker - INFO - Email 488 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEGATIVE, Keyword: information)
+2026-01-29 14:43:54,686 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: HARD_BLOCK_KEYWORD (Contains hard block keyword) | Details: keyword=payment, intent=REQUEST
+2026-01-29 14:43:54,701 - Worker - INFO - Email 488 completed. Intent: REQUEST
+2026-01-29 14:43:54,710 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 14:43:54,711 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 14:43:54,715 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 14:43:54,721 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 14:43:54,722 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 14:43:56,735 - GmailFetcher - INFO - Found 28 unread emails
+2026-01-29 14:44:06,573 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 6 emails saved
+2026-01-29 14:44:06,588 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 14:44:06,589 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 14:44:06,604 - Worker - INFO - Processing Email ID: 489 - Subject: Nominee Details Update Required - Policy #392473915
+2026-01-29 14:44:06,661 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 14:44:19,377 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 14:44:22,995 - ReplyGenerator - INFO - Reply generated successfully: Pattern=PATTERN_A, Length=93
+2026-01-29 14:44:23,019 - Worker - INFO - Email 487 completed. Intent: REQUEST
+2026-01-29 14:44:23,029 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 14:44:23,030 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 14:44:23,036 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 14:44:23,042 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 14:44:23,043 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 14:44:24,971 - GmailFetcher - INFO - Found 28 unread emails
+2026-01-29 14:44:28,977 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 14:44:34,918 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 14:44:34,934 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 14:44:34,935 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 14:44:34,951 - Worker - INFO - Processing Email ID: 490 - Subject: Duplicate Policy Bond Request for Policy No. 162287560
+2026-01-29 14:44:35,133 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 14:46:15,205 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 14:46:29,122 - Brain - INFO - Analysis complete.
+2026-01-29 14:46:29,125 - Worker - INFO - Email 489 - Priority: MEDIUM (Intent: POLICY_UPDATE, Sentiment: NEUTRAL, Keyword: update)
+2026-01-29 14:46:29,126 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: PATTERN_NOT_FOUND (Intent does not map to a safe pattern) | Details: intent=POLICY_UPDATE
+2026-01-29 14:46:29,148 - Worker - INFO - Email 489 completed. Intent: POLICY_UPDATE
+2026-01-29 14:46:29,169 - Worker - INFO - Processing Email ID: 491 - Subject: Premium Receipt Missing - Policy No: 558466291
+2026-01-29 14:46:29,308 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 14:46:43,302 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 14:46:55,296 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 14:48:50,982 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 14:49:04,378 - Brain - INFO - Analysis complete.
+2026-01-29 14:49:04,381 - Worker - INFO - Email 490 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 14:49:07,346 - ReplyGenerator - INFO - Generating reply: Pattern=PATTERN_A, Intent=REQUEST, Priority=MEDIUM
+2026-01-29 14:50:27,289 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 14:50:47,672 - Brain - INFO - Analysis complete.
+2026-01-29 14:50:47,674 - Worker - INFO - Email 491 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 14:50:47,675 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: HARD_BLOCK_KEYWORD (Contains hard block keyword) | Details: keyword=payments, intent=REQUEST
+2026-01-29 14:50:47,692 - Worker - INFO - Email 491 completed. Intent: REQUEST
+2026-01-29 14:50:47,706 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 14:50:47,707 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 14:50:47,713 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 14:50:47,733 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 14:50:47,734 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 14:50:50,026 - GmailFetcher - INFO - Found 37 unread emails
+2026-01-29 14:51:04,589 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 9 emails saved
+2026-01-29 14:51:04,618 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 14:51:04,619 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 14:51:04,649 - Worker - INFO - Processing Email ID: 507 - Subject: Premium Receipt Missing for Policy No. 919619754
+2026-01-29 14:51:04,988 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 14:51:23,311 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 14:51:27,344 - ReplyGenerator - INFO - Reply generated successfully: Pattern=PATTERN_A, Length=93
+2026-01-29 14:51:27,365 - Worker - INFO - Email 490 completed. Intent: REQUEST
+2026-01-29 14:51:27,374 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 14:51:27,375 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 14:51:27,381 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 14:51:27,387 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 14:51:27,389 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 14:51:29,544 - GmailFetcher - INFO - Found 37 unread emails
+2026-01-29 14:51:42,559 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 14:51:42,576 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 14:51:42,577 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 14:51:42,594 - Worker - INFO - Processing Email ID: 529 - Subject: Bonus Information Request - Policy #612955329
+2026-01-29 14:51:42,661 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 14:51:45,458 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 14:51:51,684 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 14:53:49,248 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 14:54:01,176 - Brain - INFO - Analysis complete.
+2026-01-29 14:54:01,179 - Worker - INFO - Email 507 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEGATIVE, Keyword: policy)
+2026-01-29 14:54:01,179 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: HARD_BLOCK_KEYWORD (Contains hard block keyword) | Details: keyword=payment, intent=REQUEST
+2026-01-29 14:54:01,194 - Worker - INFO - Email 507 completed. Intent: REQUEST
+2026-01-29 14:54:01,205 - Worker - INFO - Processing Email ID: 530 - Subject: Premium Receipt Missing - Policy #252997197
+2026-01-29 14:54:01,249 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 14:54:58,925 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 14:55:14,526 - Brain - INFO - Analysis complete.
+2026-01-29 14:55:14,528 - Worker - INFO - Email 529 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: information)
+2026-01-29 14:55:16,893 - ReplyGenerator - INFO - Generating reply: Pattern=PATTERN_A, Intent=REQUEST, Priority=MEDIUM
+2026-01-29 14:55:19,463 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 14:55:41,791 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 14:55:45,143 - ReplyGenerator - INFO - Reply generated successfully: Pattern=PATTERN_A, Length=93
+2026-01-29 14:55:45,161 - Worker - INFO - Email 529 completed. Intent: REQUEST
+2026-01-29 14:55:45,174 - Worker - INFO - Processing Email ID: 531 - Subject: Death Claim Documentation - Policy #147600022
+2026-01-29 14:55:45,251 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 14:57:24,399 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 14:57:36,531 - Brain - INFO - Analysis complete.
+2026-01-29 14:57:36,532 - Worker - INFO - Email 530 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 14:57:36,533 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: LOW_CONFIDENCE (Confidence level is not High) | Details: confidence=Medium, intent=REQUEST
+2026-01-29 14:57:36,582 - Worker - INFO - Email 530 completed. Intent: REQUEST
+2026-01-29 14:57:36,612 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 14:57:36,615 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 14:57:36,641 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 14:57:36,661 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 14:57:36,663 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 14:57:41,533 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 14:57:42,715 - GmailFetcher - INFO - Found 45 unread emails
+2026-01-29 14:58:00,163 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 8 emails saved
+2026-01-29 14:58:00,220 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 14:58:00,229 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 14:58:00,326 - Worker - INFO - Processing Email ID: 532 - Subject: Address Change Confirmation - Policy #272301502
+2026-01-29 14:58:00,556 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 14:59:30,059 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 14:59:42,955 - Brain - INFO - Analysis complete.
+2026-01-29 14:59:42,967 - Worker - INFO - Email 531 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 14:59:43,016 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: LOW_CONFIDENCE (Confidence level is not High) | Details: confidence=Medium, intent=REQUEST
+2026-01-29 14:59:43,212 - Worker - INFO - Email 531 completed. Intent: REQUEST
+2026-01-29 14:59:43,309 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 14:59:43,313 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 14:59:43,329 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 14:59:43,346 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 14:59:43,358 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 14:59:48,183 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 14:59:49,780 - GmailFetcher - INFO - Found 47 unread emails
+2026-01-29 15:00:10,322 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 2 emails saved
+2026-01-29 15:00:10,397 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 15:00:10,405 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 15:00:10,477 - Worker - INFO - Processing Email ID: 533 - Subject: Surrender Value Calculation Query - Policy #577226962
+2026-01-29 15:00:10,893 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:01:15,511 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:01:28,034 - Brain - INFO - Analysis complete.
+2026-01-29 15:01:28,046 - Worker - INFO - Email 532 - Priority: MEDIUM (Intent: POLICY_UPDATE, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 15:01:28,064 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: PATTERN_NOT_FOUND (Intent does not map to a safe pattern) | Details: intent=POLICY_UPDATE
+2026-01-29 15:01:28,127 - Worker - INFO - Email 532 completed. Intent: POLICY_UPDATE
+2026-01-29 15:01:28,188 - Worker - INFO - Processing Email ID: 534 - Subject: Nominee Details Update Required
+2026-01-29 15:01:28,710 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:01:32,337 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:01:41,460 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:03:09,843 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:03:23,136 - Brain - INFO - Analysis complete.
+2026-01-29 15:03:23,143 - Worker - INFO - Email 533 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 15:03:33,707 - ReplyGenerator - INFO - Generating reply: Pattern=PATTERN_A, Intent=REQUEST, Priority=MEDIUM
+2026-01-29 15:04:42,927 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:04:57,940 - Brain - INFO - Analysis complete.
+2026-01-29 15:04:57,960 - Worker - INFO - Email 534 - Priority: MEDIUM (Intent: POLICY_UPDATE, Sentiment: NEUTRAL, Keyword: update)
+2026-01-29 15:04:57,978 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: PATTERN_NOT_FOUND (Intent does not map to a safe pattern) | Details: intent=POLICY_UPDATE
+2026-01-29 15:04:58,073 - Worker - INFO - Email 534 completed. Intent: POLICY_UPDATE
+2026-01-29 15:04:58,133 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 15:04:58,135 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 15:04:58,137 - GmailFetcher - INFO - Access token expired for licinsurance04@gmail.com, refreshing...
+2026-01-29 15:05:04,497 - GmailFetcher - INFO - Token refreshed successfully for licinsurance04@gmail.com
+2026-01-29 15:05:04,629 - Database - INFO - Gmail config saved for licinsurance04@gmail.com
+2026-01-29 15:05:04,743 - GmailFetcher - INFO - Updated credentials saved for licinsurance04@gmail.com
+2026-01-29 15:05:04,816 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 15:05:04,886 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 15:05:04,904 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 15:05:15,386 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 15:05:25,789 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:05:30,130 - ReplyGenerator - INFO - Reply generated successfully: Pattern=PATTERN_A, Length=93
+2026-01-29 15:05:30,226 - Worker - INFO - Email 533 completed. Intent: REQUEST
+2026-01-29 15:05:30,276 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 15:05:30,283 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 15:05:30,359 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 15:05:30,436 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 15:05:30,438 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 15:05:33,676 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 15:05:35,536 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 6 emails saved
+2026-01-29 15:05:35,570 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 15:05:35,590 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 15:05:35,636 - Worker - INFO - Processing Email ID: 585 - Subject: Maturity Benefit Delay - Policy Number: 383370843
+2026-01-29 15:05:35,898 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:05:50,041 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:05:53,272 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 15:05:53,423 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 15:05:53,424 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 15:05:53,540 - Worker - INFO - Processing Email ID: 586 - Subject: Bonus Information Request - Policy #419389438
+2026-01-29 15:05:53,874 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:07:28,929 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:07:41,499 - Brain - INFO - Analysis complete.
+2026-01-29 15:07:41,511 - Worker - INFO - Email 585 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: update)
+2026-01-29 15:07:41,519 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: HARD_BLOCK_KEYWORD (Contains hard block keyword) | Details: keyword=payment, intent=REQUEST
+2026-01-29 15:07:41,562 - Worker - INFO - Email 585 completed. Intent: REQUEST
+2026-01-29 15:07:41,602 - Worker - INFO - Processing Email ID: 587 - Subject: Premium Receipt Missing - Policy #507614241
+2026-01-29 15:07:41,737 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:07:45,655 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:07:50,048 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:09:16,922 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:09:29,592 - Brain - INFO - Analysis complete.
+2026-01-29 15:09:29,596 - Worker - INFO - Email 586 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: information)
+2026-01-29 15:09:40,254 - ReplyGenerator - INFO - Generating reply: Pattern=PATTERN_A, Intent=REQUEST, Priority=MEDIUM
+2026-01-29 15:10:26,347 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:10:37,769 - Brain - INFO - Analysis complete.
+2026-01-29 15:10:37,779 - Worker - INFO - Email 587 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 15:10:37,780 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: LOW_CONFIDENCE (Confidence level is not High) | Details: confidence=Medium, intent=REQUEST
+2026-01-29 15:10:37,820 - Worker - INFO - Email 587 completed. Intent: REQUEST
+2026-01-29 15:10:37,853 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 15:10:37,863 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 15:10:37,885 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 15:10:37,905 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 15:10:37,906 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 15:10:45,490 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 15:10:57,991 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:11:01,351 - ReplyGenerator - INFO - Reply generated successfully: Pattern=PATTERN_A, Length=93
+2026-01-29 15:11:01,519 - Worker - INFO - Email 586 completed. Intent: REQUEST
+2026-01-29 15:11:01,593 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 15:11:01,618 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 15:11:01,714 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 15:11:01,799 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 15:11:01,825 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 15:11:04,520 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 15:11:04,955 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 4 emails saved
+2026-01-29 15:11:04,991 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 15:11:05,003 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 15:11:05,044 - Worker - INFO - Processing Email ID: 588 - Subject: Address Change Confirmation for Policy 929570353
+2026-01-29 15:11:05,402 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:11:17,578 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:11:24,337 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 15:11:24,447 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 15:11:24,474 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 15:11:24,614 - Worker - INFO - Processing Email ID: 589 - Subject: Death Claim Documentation Query
+2026-01-29 15:11:25,403 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:13:16,850 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:13:31,831 - Brain - INFO - Analysis complete.
+2026-01-29 15:13:31,841 - Worker - INFO - Email 588 - Priority: MEDIUM (Intent: POLICY_UPDATE, Sentiment: NEUTRAL, Keyword: update)
+2026-01-29 15:13:31,851 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: PATTERN_NOT_FOUND (Intent does not map to a safe pattern) | Details: intent=POLICY_UPDATE
+2026-01-29 15:13:31,946 - Worker - INFO - Email 588 completed. Intent: POLICY_UPDATE
+2026-01-29 15:13:31,990 - Worker - INFO - Processing Email ID: 590 - Subject: Address Change Confirmation - Policy #360146776
+2026-01-29 15:13:32,221 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:13:43,567 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:13:48,911 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:15:43,383 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:15:59,793 - Brain - INFO - Analysis complete.
+2026-01-29 15:15:59,802 - Worker - INFO - Email 589 - Priority: HIGH (Intent: CLAIM_RELATED, Sentiment: NEGATIVE, Keyword: death)
+2026-01-29 15:15:59,803 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: HIGH_PRIORITY (Email priority is HIGH - requires human handling) | Details: priority=HIGH, intent=CLAIM_RELATED
+2026-01-29 15:15:59,911 - Worker - INFO - Email 589 completed. Intent: CLAIM_RELATED
+2026-01-29 15:15:59,979 - Worker - INFO - Processing Email ID: 591 - Subject: Policy Revival After Lapse: 462130381
+2026-01-29 15:16:00,495 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:17:10,324 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:17:23,911 - Brain - INFO - Analysis complete.
+2026-01-29 15:17:23,913 - Worker - INFO - Email 590 - Priority: MEDIUM (Intent: POLICY_UPDATE, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 15:17:23,914 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: PATTERN_NOT_FOUND (Intent does not map to a safe pattern) | Details: intent=POLICY_UPDATE
+2026-01-29 15:17:23,938 - Worker - INFO - Email 590 completed. Intent: POLICY_UPDATE
+2026-01-29 15:17:23,962 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 15:17:23,968 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 15:17:23,982 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 15:17:24,002 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 15:17:24,007 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 15:17:29,955 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 15:17:34,074 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:17:48,794 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 15:17:48,871 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 15:17:48,876 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 15:17:48,956 - Worker - INFO - Processing Email ID: 592 - Subject: Loan Against Policy Request - Policy #306192294
+2026-01-29 15:17:49,338 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:19:36,014 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:19:50,058 - Brain - INFO - Analysis complete.
+2026-01-29 15:19:50,073 - Worker - INFO - Email 591 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 15:19:55,063 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:20:00,182 - ReplyGenerator - INFO - Generating reply: Pattern=PATTERN_A, Intent=REQUEST, Priority=MEDIUM
+2026-01-29 15:21:37,147 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:21:48,682 - Brain - INFO - Analysis complete.
+2026-01-29 15:21:48,706 - Worker - INFO - Email 592 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 15:21:59,845 - ReplyGenerator - INFO - Generating reply: Pattern=PATTERN_A, Intent=REQUEST, Priority=MEDIUM
+2026-01-29 15:22:14,218 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:22:17,311 - ReplyGenerator - INFO - Reply generated successfully: Pattern=PATTERN_A, Length=93
+2026-01-29 15:22:17,403 - Worker - INFO - Email 591 completed. Intent: REQUEST
+2026-01-29 15:22:17,480 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 15:22:17,484 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 15:22:17,508 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 15:22:17,538 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 15:22:17,550 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 15:22:23,721 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 15:22:25,735 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:22:30,194 - ReplyGenerator - INFO - Reply generated successfully: Pattern=PATTERN_A, Length=93
+2026-01-29 15:22:30,218 - Worker - INFO - Email 592 completed. Intent: REQUEST
+2026-01-29 15:22:30,229 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 15:22:30,236 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 15:22:30,251 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 15:22:30,265 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 15:22:30,271 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 15:22:33,431 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 15:27:12,240 - GmailFetcher - WARNING - Error parsing message 19c0917f3f64c3fc: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-01-29 15:27:12,265 - GmailFetcher - WARNING - Error parsing message 19c0916e80b31fce: Unable to find the server at gmail.googleapis.com
+2026-01-29 15:27:12,270 - GmailFetcher - WARNING - Error parsing message 19c0902d2b632369: Unable to find the server at gmail.googleapis.com
+2026-01-29 15:27:12,273 - GmailFetcher - WARNING - Error parsing message 19c091634466159e: Unable to find the server at gmail.googleapis.com
+2026-01-29 15:27:18,095 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 15:27:18,111 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 15:27:18,112 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 15:27:18,127 - Worker - INFO - Processing Email ID: 593 - Subject: Maturity Benefit Delay - Policy #734907881
+2026-01-29 15:27:18,187 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:27:21,679 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:27:27,058 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 15:27:27,076 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 15:27:27,079 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 15:27:27,099 - Worker - INFO - Processing Email ID: 659 - Subject: Bonus Information Request - Policy No. 995208946
+2026-01-29 15:27:27,220 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:28:49,441 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:29:02,966 - Brain - INFO - Analysis complete.
+2026-01-29 15:29:02,970 - Worker - INFO - Email 593 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 15:29:02,975 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: LOW_CONFIDENCE (Confidence level is not High) | Details: confidence=Medium, intent=REQUEST
+2026-01-29 15:29:02,995 - Worker - INFO - Email 593 completed. Intent: REQUEST
+2026-01-29 15:29:03,012 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 15:29:03,017 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 15:29:03,026 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 15:29:03,051 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 15:29:03,053 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 15:29:10,673 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 15:29:15,164 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:29:32,813 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 15:29:32,849 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 15:29:32,851 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 15:29:32,878 - Worker - INFO - Processing Email ID: 660 - Subject: Surrender Value Calculation Query - Policy #777661744
+2026-01-29 15:29:32,984 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:31:05,834 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:31:20,616 - Brain - INFO - Analysis complete.
+2026-01-29 15:31:20,619 - Worker - INFO - Email 659 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: update)
+2026-01-29 15:31:20,619 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: HARD_BLOCK_KEYWORD (Contains hard block keyword) | Details: keyword=payment, intent=REQUEST
+2026-01-29 15:31:20,634 - Worker - INFO - Email 659 completed. Intent: REQUEST
+2026-01-29 15:31:20,641 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 15:31:20,642 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 15:31:20,647 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 15:31:20,651 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 15:31:20,652 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 15:31:22,454 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 15:31:25,965 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:31:43,335 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 15:31:43,351 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 15:31:43,351 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 15:31:43,370 - Worker - INFO - Processing Email ID: 661 - Subject: Address Change Confirmation - Policy #537021494
+2026-01-29 15:31:43,424 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:33:09,327 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:33:25,670 - Brain - INFO - Analysis complete.
+2026-01-29 15:33:25,672 - Worker - INFO - Email 660 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 15:33:28,994 - ReplyGenerator - INFO - Generating reply: Pattern=PATTERN_A, Intent=REQUEST, Priority=MEDIUM
+2026-01-29 15:33:32,285 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:33:56,250 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:33:59,351 - ReplyGenerator - INFO - Reply generated successfully: Pattern=PATTERN_A, Length=93
+2026-01-29 15:33:59,368 - Worker - INFO - Email 660 completed. Intent: REQUEST
+2026-01-29 15:33:59,382 - Worker - INFO - Processing Email ID: 662 - Subject: Nominee Update Required for Policy 297307967
+2026-01-29 15:33:59,547 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:35:35,140 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:35:48,094 - Brain - INFO - Analysis complete.
+2026-01-29 15:35:48,106 - Worker - INFO - Email 661 - Priority: MEDIUM (Intent: POLICY_UPDATE, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 15:35:48,140 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: PATTERN_NOT_FOUND (Intent does not map to a safe pattern) | Details: intent=POLICY_UPDATE
+2026-01-29 15:35:48,319 - Worker - INFO - Email 661 completed. Intent: POLICY_UPDATE
+2026-01-29 15:35:48,417 - Worker - INFO - Processing Email ID: 663 - Subject: Request for Bonus Information
+2026-01-29 15:35:48,983 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:35:58,617 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:36:09,698 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:38:03,344 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:38:14,765 - Brain - INFO - Analysis complete.
+2026-01-29 15:38:14,767 - Worker - INFO - Email 662 - Priority: MEDIUM (Intent: POLICY_UPDATE, Sentiment: NEUTRAL, Keyword: update)
+2026-01-29 15:38:14,768 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: PATTERN_NOT_FOUND (Intent does not map to a safe pattern) | Details: intent=POLICY_UPDATE
+2026-01-29 15:38:14,779 - Worker - INFO - Email 662 completed. Intent: POLICY_UPDATE
+2026-01-29 15:38:14,785 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 15:38:14,786 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 15:38:14,789 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 15:38:14,794 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 15:38:14,794 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 15:38:16,445 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 15:38:36,916 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 15:38:36,930 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 15:38:36,931 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 15:38:36,947 - Worker - INFO - Processing Email ID: 664 - Subject: Maturity Benefit Delay - Policy #621249985
+2026-01-29 15:38:37,002 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:39:25,862 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:39:39,627 - Brain - INFO - Analysis complete.
+2026-01-29 15:39:39,629 - Worker - INFO - Email 663 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: update)
+2026-01-29 15:39:41,750 - ReplyGenerator - INFO - Generating reply: Pattern=PATTERN_A, Intent=REQUEST, Priority=MEDIUM
+2026-01-29 15:39:44,697 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:40:14,800 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:40:18,600 - ReplyGenerator - INFO - Reply generated successfully: Pattern=PATTERN_A, Length=93
+2026-01-29 15:40:18,618 - Worker - INFO - Email 663 completed. Intent: REQUEST
+2026-01-29 15:40:18,628 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 15:40:18,628 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 15:40:18,634 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 15:40:18,646 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 15:40:18,650 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 15:40:20,656 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 15:40:42,171 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 15:40:42,185 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 15:40:42,186 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 15:40:42,200 - Worker - INFO - Processing Email ID: 665 - Subject: Death Claim Documentation Query
+2026-01-29 15:40:42,310 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:41:51,252 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:42:03,432 - Brain - INFO - Analysis complete.
+2026-01-29 15:42:03,439 - Worker - INFO - Email 664 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 15:42:03,443 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: LOW_CONFIDENCE (Confidence level is not High) | Details: confidence=Medium, intent=REQUEST
+2026-01-29 15:42:03,508 - Worker - INFO - Email 664 completed. Intent: REQUEST
+2026-01-29 15:42:03,556 - Worker - INFO - Processing Email ID: 666 - Subject: Premium Payment Mode Change Issue
+2026-01-29 15:42:04,170 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:42:12,259 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:42:24,332 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:44:23,377 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:44:42,671 - Brain - INFO - Analysis complete.
+2026-01-29 15:44:42,714 - Worker - INFO - Email 665 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 15:44:42,772 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: HARD_BLOCK_KEYWORD (Contains hard block keyword) | Details: keyword=claim, intent=REQUEST
+2026-01-29 15:44:42,935 - Worker - INFO - Email 665 completed. Intent: REQUEST
+2026-01-29 15:44:43,043 - Worker - INFO - Processing Email ID: 704 - Subject: Premium Payment Mode Change - Policy #522824527
+2026-01-29 15:44:43,428 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:46:09,872 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:46:24,960 - Brain - INFO - Analysis complete.
+2026-01-29 15:46:24,961 - Worker - INFO - Email 666 - Priority: HIGH (Intent: COMPLAINT, Sentiment: NEGATIVE, Keyword: urgent)
+2026-01-29 15:46:24,964 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: HIGH_PRIORITY (Email priority is HIGH - requires human handling) | Details: priority=HIGH, intent=COMPLAINT
+2026-01-29 15:46:25,037 - Worker - INFO - Email 666 completed. Intent: COMPLAINT
+2026-01-29 15:46:25,082 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 15:46:25,084 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 15:46:25,097 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 15:46:25,129 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 15:46:25,136 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 15:46:29,280 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 15:46:29,578 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:46:50,573 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 15:46:50,615 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 15:46:50,621 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 15:46:50,677 - Worker - INFO - Processing Email ID: 705 - Subject: Premium Payment Mode Change Query
+2026-01-29 15:46:51,011 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:48:04,467 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:48:17,631 - Brain - INFO - Analysis complete.
+2026-01-29 15:48:17,640 - Worker - INFO - Email 704 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 15:48:17,649 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: LOW_CONFIDENCE (Confidence level is not High) | Details: confidence=Medium, intent=REQUEST
+2026-01-29 15:48:17,702 - Worker - INFO - Email 704 completed. Intent: REQUEST
+2026-01-29 15:48:17,737 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 15:48:17,740 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 15:48:17,751 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 15:48:17,769 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 15:48:17,771 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 15:48:21,534 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 15:48:29,359 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:48:41,973 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 15:48:42,028 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 15:48:42,034 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 15:48:42,092 - Worker - INFO - Processing Email ID: 751 - Subject: Maturity Benefit Delay - Policy #382321901
+2026-01-29 15:48:42,277 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:50:25,238 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:50:47,703 - Brain - INFO - Analysis complete.
+2026-01-29 15:50:47,711 - Worker - INFO - Email 705 - Priority: MEDIUM (Intent: GENERAL_ENQUIRY, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 15:50:47,712 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: LOW_CONFIDENCE (Confidence level is not High) | Details: confidence=Medium, intent=GENERAL_ENQUIRY
+2026-01-29 15:50:47,793 - Worker - INFO - Email 705 completed. Intent: GENERAL_ENQUIRY
+2026-01-29 15:50:47,850 - Worker - INFO - Processing Email ID: 752 - Subject: Maturity Benefit Delay - Policy #710079558
+2026-01-29 15:50:48,017 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:50:52,729 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:50:57,601 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:52:37,405 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:52:50,491 - Brain - INFO - Analysis complete.
+2026-01-29 15:52:50,493 - Worker - INFO - Email 751 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 15:52:50,494 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: LOW_CONFIDENCE (Confidence level is not High) | Details: confidence=Medium, intent=REQUEST
+2026-01-29 15:52:50,535 - Worker - INFO - Email 751 completed. Intent: REQUEST
+2026-01-29 15:52:50,578 - Worker - INFO - Processing Email ID: 753 - Subject: Tax Certificate Not Received - Policy #260191650
+2026-01-29 15:52:50,682 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:53:47,734 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:54:01,646 - Brain - INFO - Analysis complete.
+2026-01-29 15:54:01,647 - Worker - INFO - Email 752 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 15:54:01,648 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: LOW_CONFIDENCE (Confidence level is not High) | Details: confidence=Medium, intent=REQUEST
+2026-01-29 15:54:01,662 - Worker - INFO - Email 752 completed. Intent: REQUEST
+2026-01-29 15:54:01,671 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 15:54:01,672 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 15:54:01,677 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 15:54:01,682 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 15:54:01,683 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 15:54:03,447 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 15:54:07,629 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:54:23,945 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 15:54:23,956 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 15:54:23,957 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 15:54:23,970 - Worker - INFO - Processing Email ID: 754 - Subject: Surrender Value Calculation Query - Policy #456693972
+2026-01-29 15:54:24,017 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:55:35,330 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:55:46,135 - Brain - INFO - Analysis complete.
+2026-01-29 15:55:46,136 - Worker - INFO - Email 753 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 15:55:46,136 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: LOW_CONFIDENCE (Confidence level is not High) | Details: confidence=Medium, intent=REQUEST
+2026-01-29 15:55:46,159 - Worker - INFO - Email 753 completed. Intent: REQUEST
+2026-01-29 15:55:46,167 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 15:55:46,167 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 15:55:46,171 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 15:55:46,175 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 15:55:46,176 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 15:55:47,585 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 15:55:51,817 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:56:08,679 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 15:56:08,693 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 15:56:08,694 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 15:56:08,710 - Worker - INFO - Processing Email ID: 755 - Subject: Maturity Benefit Delay - Policy No. 725833940
+2026-01-29 15:56:08,859 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 15:57:18,982 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:57:32,432 - Brain - INFO - Analysis complete.
+2026-01-29 15:57:32,434 - Worker - INFO - Email 754 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 15:57:39,276 - ReplyGenerator - INFO - Generating reply: Pattern=PATTERN_A, Intent=REQUEST, Priority=MEDIUM
+2026-01-29 15:57:49,416 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 15:58:09,485 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 15:58:11,993 - ReplyGenerator - INFO - Reply generated successfully: Pattern=PATTERN_A, Length=93
+2026-01-29 15:58:12,051 - Worker - INFO - Email 754 completed. Intent: REQUEST
+2026-01-29 15:58:12,091 - Worker - INFO - Processing Email ID: 756 - Subject: Nominee Details Update Query
+2026-01-29 15:58:12,375 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 16:33:09,655 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 16:33:26,034 - Brain - INFO - Analysis complete.
+2026-01-29 16:33:26,036 - Worker - INFO - Email 755 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEGATIVE, Keyword: status)
+2026-01-29 16:33:26,036 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: HARD_BLOCK_KEYWORD (Contains hard block keyword) | Details: keyword=payment, intent=REQUEST
+2026-01-29 16:33:26,061 - Worker - INFO - Email 755 completed. Intent: REQUEST
+2026-01-29 16:33:26,079 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 16:33:26,082 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 16:33:26,085 - GmailFetcher - INFO - Access token expired for licinsurance04@gmail.com, refreshing...
+2026-01-29 16:33:27,567 - GmailFetcher - INFO - Token refreshed successfully for licinsurance04@gmail.com
+2026-01-29 16:33:27,583 - Database - INFO - Gmail config saved for licinsurance04@gmail.com
+2026-01-29 16:33:27,610 - GmailFetcher - INFO - Updated credentials saved for licinsurance04@gmail.com
+2026-01-29 16:33:27,624 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 16:33:27,640 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 16:33:27,647 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 16:33:30,569 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 16:33:31,625 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 16:33:52,412 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 16:33:52,488 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 16:33:52,513 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 16:33:52,614 - Worker - INFO - Processing Email ID: 851 - Subject: Delay in Bonus Information Request
+2026-01-29 16:33:53,281 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 16:34:59,748 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 16:35:14,802 - Brain - INFO - Analysis complete.
+2026-01-29 16:35:14,806 - Worker - INFO - Email 756 - Priority: MEDIUM (Intent: POLICY_UPDATE, Sentiment: NEUTRAL, Keyword: update)
+2026-01-29 16:35:14,808 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: HARD_BLOCK_KEYWORD (Contains hard block keyword) | Details: keyword=claim, intent=POLICY_UPDATE
+2026-01-29 16:35:14,847 - Worker - INFO - Email 756 completed. Intent: POLICY_UPDATE
+2026-01-29 16:35:14,860 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 16:35:14,862 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 16:35:14,870 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 16:35:14,878 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 16:35:14,878 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 16:35:18,931 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 16:35:30,146 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 16:35:39,723 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 16:35:39,799 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 16:35:39,808 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 16:35:39,882 - Worker - INFO - Processing Email ID: 852 - Subject: Premium Payment Mode Change Query
+2026-01-29 16:35:40,113 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 16:37:22,170 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 16:37:36,448 - Brain - INFO - Analysis complete.
+2026-01-29 16:37:36,449 - Worker - INFO - Email 851 - Priority: HIGH (Intent: COMPLAINT, Sentiment: NEGATIVE, Keyword: immediately)
+2026-01-29 16:37:36,450 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: HIGH_PRIORITY (Email priority is HIGH - requires human handling) | Details: priority=HIGH, intent=COMPLAINT
+2026-01-29 16:37:36,482 - Worker - INFO - Email 851 completed. Intent: COMPLAINT
+2026-01-29 16:37:36,510 - Worker - INFO - Processing Email ID: 853 - Subject: Claim Status Inquiry - Policy Matured
+2026-01-29 16:37:36,716 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 16:37:47,103 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 16:38:01,624 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 16:39:39,528 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 16:39:51,854 - Brain - INFO - Analysis complete.
+2026-01-29 16:39:51,859 - Worker - INFO - Email 852 - Priority: MEDIUM (Intent: POLICY_UPDATE, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-29 16:39:51,861 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: HARD_BLOCK_KEYWORD (Contains hard block keyword) | Details: keyword=payment, intent=POLICY_UPDATE
+2026-01-29 16:39:51,886 - Worker - INFO - Email 852 completed. Intent: POLICY_UPDATE
+2026-01-29 16:39:51,924 - Worker - INFO - Processing Email ID: 854 - Subject: Address Change Confirmation Needed
+2026-01-29 16:39:52,060 - Brain - INFO - Invoking RAG Chain...
+2026-01-29 16:40:48,721 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 16:41:00,954 - Brain - INFO - Analysis complete.
+2026-01-29 16:41:00,958 - Worker - INFO - Email 853 - Priority: MEDIUM (Intent: GENERAL_ENQUIRY, Sentiment: NEUTRAL, Keyword: status)
+2026-01-29 16:41:00,959 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: LOW_CONFIDENCE (Confidence level is not High) | Details: confidence=Medium, intent=GENERAL_ENQUIRY
+2026-01-29 16:41:00,984 - Worker - INFO - Email 853 completed. Intent: GENERAL_ENQUIRY
+2026-01-29 16:41:00,998 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 16:41:00,999 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 16:41:01,005 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 16:41:01,016 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 16:41:01,017 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 16:41:04,267 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 16:41:09,382 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-29 16:41:25,406 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 16:41:25,423 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 16:41:25,423 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 16:42:26,689 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-29 16:42:38,473 - Brain - INFO - Analysis complete.
+2026-01-29 16:42:38,477 - Worker - INFO - Email 854 - Priority: MEDIUM (Intent: POLICY_UPDATE, Sentiment: NEUTRAL, Keyword: update)
+2026-01-29 16:42:38,479 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: PATTERN_NOT_FOUND (Intent does not map to a safe pattern) | Details: intent=POLICY_UPDATE
+2026-01-29 16:42:38,519 - Worker - INFO - Email 854 completed. Intent: POLICY_UPDATE
+2026-01-29 16:42:38,534 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 16:42:38,535 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 16:42:38,544 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 16:42:38,552 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 16:42:38,554 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 16:42:40,175 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 16:43:00,493 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 16:43:00,507 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 16:43:00,508 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 16:46:55,354 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 16:46:55,354 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 16:46:55,359 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 16:46:55,365 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 16:46:55,365 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 16:46:56,894 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 16:47:17,344 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 16:47:17,358 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 16:47:17,359 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 16:48:30,395 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 16:48:30,396 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 16:48:30,400 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 16:48:30,404 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 16:48:30,405 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 16:48:31,795 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 16:48:54,004 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 16:48:54,016 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 16:48:54,017 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 16:52:17,406 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 16:52:17,407 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 16:52:17,411 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 16:52:17,417 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 16:52:17,418 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 16:52:19,085 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 16:52:44,304 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 16:52:44,317 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 16:52:44,319 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 16:53:54,075 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 16:53:54,076 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 16:53:54,080 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 16:53:54,085 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 16:53:54,086 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 16:53:55,443 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 16:54:17,177 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 16:54:17,190 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 16:54:17,191 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 16:57:44,370 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 16:57:44,371 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 16:57:44,377 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 16:57:44,384 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 16:57:44,385 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 16:57:46,160 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 16:58:06,789 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 16:58:06,803 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 16:58:06,804 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 16:59:17,244 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 16:59:17,245 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 16:59:17,250 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 16:59:17,258 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 16:59:17,260 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 16:59:18,932 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 16:59:38,306 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 16:59:38,323 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 16:59:38,326 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 17:03:26,517 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 17:03:26,517 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 17:03:26,521 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 17:03:26,526 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 17:03:26,527 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 17:03:30,940 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 17:03:51,084 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 17:03:51,099 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 17:03:51,102 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 17:04:20,945 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 17:04:20,946 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 17:04:20,952 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 17:04:20,963 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 17:04:20,965 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 17:04:22,783 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 17:04:42,624 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 17:04:42,638 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 17:04:42,639 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 17:08:51,158 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 17:08:51,158 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 17:08:51,163 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 17:08:51,169 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 17:08:51,170 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 17:08:52,582 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 17:09:12,302 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 17:09:12,314 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 17:09:12,315 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 17:09:42,686 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 17:09:42,687 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 17:09:42,692 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 17:09:42,697 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 17:09:42,698 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 17:09:44,084 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 17:10:03,974 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 17:10:03,987 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 17:10:03,988 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 17:14:12,375 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 17:14:12,376 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 17:14:12,380 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 17:14:12,387 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 17:14:12,388 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 17:14:13,803 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 17:14:35,971 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 17:14:35,987 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 17:14:35,988 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 17:15:04,044 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 17:15:04,045 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 17:15:04,049 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 17:15:04,057 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 17:15:04,058 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 17:15:05,349 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 17:15:24,495 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 17:15:24,508 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 17:15:24,509 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 17:19:36,036 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 17:19:36,037 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 17:19:36,042 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 17:19:36,049 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 17:19:36,050 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 17:19:37,395 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 17:19:57,068 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 17:19:57,083 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 17:19:57,084 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 17:20:24,567 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 17:20:24,568 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 17:20:24,572 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 17:20:24,578 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 17:20:24,578 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 17:20:25,926 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 17:20:46,725 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 17:20:46,739 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 17:20:46,741 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 17:24:57,138 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 17:24:57,139 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 17:24:57,144 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 17:24:57,151 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 17:24:57,153 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 17:24:58,518 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 17:25:19,127 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 17:25:19,142 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 17:25:19,143 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 17:25:46,796 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 17:25:46,797 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 17:25:46,802 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 17:25:46,817 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 17:25:46,819 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 17:25:48,059 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 17:26:08,375 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 17:26:08,387 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 17:26:08,388 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 17:30:19,224 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 17:30:19,226 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 17:30:19,227 - GmailFetcher - INFO - Access token expired for licinsurance04@gmail.com, refreshing...
+2026-01-29 17:30:20,674 - GmailFetcher - INFO - Token refreshed successfully for licinsurance04@gmail.com
+2026-01-29 17:30:20,702 - Database - INFO - Gmail config saved for licinsurance04@gmail.com
+2026-01-29 17:30:20,721 - GmailFetcher - INFO - Updated credentials saved for licinsurance04@gmail.com
+2026-01-29 17:30:20,726 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 17:30:20,736 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 17:30:20,736 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 17:30:22,925 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 17:30:42,416 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 17:30:42,434 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 17:30:42,436 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 17:31:08,454 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 17:31:08,456 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 17:31:08,460 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 17:31:08,468 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 17:31:08,469 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 17:31:10,036 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 17:31:29,787 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 17:31:29,799 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 17:31:29,800 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 17:35:42,513 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 17:35:42,515 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 17:35:42,519 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 17:35:42,527 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 17:35:42,528 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 17:35:44,230 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 17:36:04,574 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 17:36:04,593 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 17:36:04,595 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 17:36:29,894 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 17:36:29,895 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 17:36:29,900 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 17:36:29,910 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 17:36:29,911 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 17:36:31,577 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 17:36:51,051 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 17:36:51,062 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 17:36:51,063 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 17:41:04,648 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 17:41:04,651 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 17:41:04,655 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 17:41:04,672 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 17:41:04,673 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 17:41:05,794 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 17:41:26,808 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 17:41:26,822 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 17:41:26,823 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 17:41:51,125 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 17:41:51,126 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 17:41:51,131 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 17:41:51,139 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 17:41:51,140 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 17:41:52,383 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 17:42:12,382 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 17:42:12,398 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 17:42:12,399 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 17:46:26,861 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 17:46:26,861 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 17:46:26,864 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 17:46:26,868 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 17:46:26,869 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 17:46:28,174 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 17:46:46,067 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 17:46:46,078 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 17:46:46,079 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 17:47:12,444 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 17:47:12,445 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 17:47:12,448 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 17:47:12,459 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 17:47:12,459 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 17:47:13,522 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 17:47:32,687 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 17:47:32,694 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 17:47:32,694 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 17:58:36,434 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 17:58:36,443 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-29 17:58:36,451 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 17:58:36,459 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-29 17:58:36,466 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 17:58:36,474 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 17:58:36,474 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 17:58:36,478 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-29 17:58:36,484 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-29 17:58:36,485 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-29 17:58:38,465 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 17:58:38,470 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-29 17:58:56,130 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 17:58:56,140 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 17:58:56,141 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-29 17:58:57,474 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-29 17:58:57,485 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-29 17:58:57,485 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-30 12:37:47,142 - Worker - INFO - Starting ETL Worker...
+2026-01-30 12:37:47,178 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-30 12:37:47,178 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-30 12:37:47,179 - GmailFetcher - INFO - Access token expired for licinsurance04@gmail.com, refreshing...
+2026-01-30 12:37:47,281 - Main - INFO - Application starting up...
+2026-01-30 12:37:47,281 - Main - INFO - Initializing Database...
+2026-01-30 12:37:47,282 - Database - INFO - Initializing database at C:\Users\KHAN\.gemini\antigravity\scratch\lic-platform\backend\data\emails.db
+2026-01-30 12:37:47,287 - Database - INFO - Database initialized successfully
+2026-01-30 12:37:47,289 - Main - INFO - Checking for Policy Documents (RAG)...
+2026-01-30 12:37:47,291 - RAG - INFO - Loading Embedding Model (gemma2:2b)...
+2026-01-30 12:37:48,289 - GmailFetcher - INFO - Token refreshed successfully for licinsurance04@gmail.com
+2026-01-30 12:37:48,308 - Database - INFO - Gmail config saved for licinsurance04@gmail.com
+2026-01-30 12:37:48,324 - GmailFetcher - INFO - Updated credentials saved for licinsurance04@gmail.com
+2026-01-30 12:37:48,332 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-30 12:37:48,338 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-30 12:37:48,338 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-30 12:37:48,864 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-01-30 12:37:49,187 - RAG - INFO - Vector store already contains documents. Skipping re-ingestion.
+2026-01-30 12:37:49,188 - Main - INFO - Email processing worker task created
+2026-01-30 12:37:49,789 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-30 12:37:50,204 - Main - INFO - Starting email processing worker...
+2026-01-30 12:37:50,205 - Worker - INFO - Starting ETL Worker...
+2026-01-30 12:37:50,215 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-30 12:37:50,215 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-30 12:37:50,219 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-30 12:37:50,223 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-30 12:37:50,223 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-30 12:37:51,240 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-30 12:38:10,939 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-30 12:38:10,950 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-30 12:38:10,951 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-30 12:38:12,453 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-30 12:38:12,467 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-30 12:38:12,468 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-30 12:43:40,839 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-30 12:43:40,840 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-30 12:43:40,846 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-30 12:43:40,852 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-30 12:43:40,853 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-30 12:43:42,353 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-30 12:43:42,354 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-30 12:43:42,358 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-30 12:43:42,362 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-30 12:43:42,363 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-30 12:43:45,427 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-30 12:43:45,430 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-30 12:44:05,529 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-30 12:44:05,535 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-30 12:44:05,540 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-30 12:44:05,541 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-30 12:44:05,553 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-30 12:44:05,555 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-30 12:49:05,589 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-30 12:49:05,590 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-30 12:49:05,594 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-30 12:49:05,598 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-30 12:49:05,599 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-30 12:49:05,606 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-30 12:49:05,607 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-30 12:49:05,613 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-30 12:49:05,617 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-30 12:49:05,618 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-30 12:49:08,358 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-30 12:49:08,375 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-30 12:49:27,760 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 4 emails saved
+2026-01-30 12:49:27,764 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-30 12:49:27,768 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-30 12:49:27,769 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-30 12:49:27,780 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-30 12:49:27,782 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-30 12:49:27,799 - Worker - INFO - Processing Email ID: 3196 - Subject: Request for Bonus Information
+2026-01-30 12:49:27,815 - Worker - INFO - Processing Email ID: 3197 - Subject: Policy Revival After Lapse - Policy #159715469
+2026-01-30 12:49:28,061 - Brain - INFO - Initializing LLM Chain (gemma2:2b)...
+2026-01-30 12:49:28,092 - Brain - INFO - Initializing LLM Chain (gemma2:2b)...
+2026-01-30 12:49:31,396 - RAG - INFO - Loading Embedding Model (gemma2:2b)...
+2026-01-30 12:49:31,619 - Brain - INFO - Invoking RAG Chain...
+2026-01-30 12:49:36,801 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-01-30 12:49:37,139 - Brain - INFO - Invoking RAG Chain...
+2026-01-30 12:49:45,284 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-30 12:49:47,719 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-30 12:50:51,318 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-30 12:51:07,421 - Brain - INFO - Analysis complete.
+2026-01-30 12:51:07,428 - Worker - INFO - Email 3196 - Priority: MEDIUM (Intent: GENERAL_ENQUIRY, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-30 12:51:07,429 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: LOW_CONFIDENCE (Confidence level is not High) | Details: confidence=Medium, intent=GENERAL_ENQUIRY
+2026-01-30 12:51:07,453 - Worker - INFO - Email 3196 completed. Intent: GENERAL_ENQUIRY
+2026-01-30 12:51:07,482 - Worker - INFO - Processing Email ID: 3198 - Subject: Duplicate Policy Bond Request
+2026-01-30 12:51:07,734 - Brain - INFO - Invoking RAG Chain...
+2026-01-30 12:52:05,319 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-30 12:52:16,704 - Brain - INFO - Analysis complete.
+2026-01-30 12:52:16,716 - Worker - INFO - Email 3197 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-30 12:52:16,717 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: LOW_CONFIDENCE (Confidence level is not High) | Details: confidence=Medium, intent=REQUEST
+2026-01-30 12:52:16,750 - Worker - INFO - Email 3197 completed. Intent: REQUEST
+2026-01-30 12:52:16,780 - Worker - INFO - Processing Email ID: 3199 - Subject: Loan Against Policy Request - Policy #686917931
+2026-01-30 12:52:16,856 - Brain - INFO - Invoking RAG Chain...
+2026-01-30 12:52:25,205 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-30 12:52:30,355 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-30 12:54:01,869 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-30 12:54:14,574 - Brain - INFO - Analysis complete.
+2026-01-30 12:54:14,578 - Worker - INFO - Email 3198 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-30 12:54:14,580 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: HARD_BLOCK_KEYWORD (Contains hard block keyword) | Details: keyword=claim, intent=REQUEST
+2026-01-30 12:54:14,614 - Worker - INFO - Email 3198 completed. Intent: REQUEST
+2026-01-30 12:54:14,631 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-30 12:54:14,634 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-30 12:54:14,639 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-30 12:54:14,644 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-30 12:54:14,645 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-30 12:54:18,628 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-30 12:54:40,232 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 6 emails saved
+2026-01-30 12:54:40,248 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-30 12:54:40,249 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-30 12:54:40,281 - Worker - INFO - Processing Email ID: 3296 - Subject: Premium Receipt Missing - Policy #216049248
+2026-01-30 12:54:40,432 - Brain - INFO - Invoking RAG Chain...
+2026-01-30 12:55:10,635 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-30 12:55:22,355 - Brain - INFO - Analysis complete.
+2026-01-30 12:55:22,359 - Worker - INFO - Email 3199 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-30 12:55:22,365 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: LOW_CONFIDENCE (Confidence level is not High) | Details: confidence=Medium, intent=REQUEST
+2026-01-30 12:55:22,389 - Worker - INFO - Email 3199 completed. Intent: REQUEST
+2026-01-30 12:55:22,410 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-30 12:55:22,411 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-30 12:55:22,424 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-30 12:55:22,431 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-30 12:55:22,436 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-30 12:55:27,117 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-30 12:55:27,305 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-30 12:55:47,392 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 1 emails saved
+2026-01-30 12:55:47,425 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-30 12:55:47,429 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-30 12:55:47,467 - Worker - INFO - Processing Email ID: 3297 - Subject: Policy Revival Request: Policy Number 641488175
+2026-01-30 12:55:47,699 - Brain - INFO - Invoking RAG Chain...
+2026-01-30 12:56:51,084 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-30 12:57:02,458 - Brain - INFO - Analysis complete.
+2026-01-30 12:57:02,461 - Worker - INFO - Email 3296 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-30 12:57:02,461 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: LOW_CONFIDENCE (Confidence level is not High) | Details: confidence=Medium, intent=REQUEST
+2026-01-30 12:57:02,492 - Worker - INFO - Email 3296 completed. Intent: REQUEST
+2026-01-30 12:57:02,520 - Worker - INFO - Processing Email ID: 3298 - Subject: Policy Document Not Received
+2026-01-30 12:57:02,675 - Brain - INFO - Invoking RAG Chain...
+2026-01-30 12:57:12,304 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-30 12:57:24,329 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-30 12:58:53,124 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-30 12:59:04,319 - Brain - INFO - Analysis complete.
+2026-01-30 12:59:04,348 - Worker - INFO - Email 3297 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-30 12:59:04,378 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: HARD_BLOCK_KEYWORD (Contains hard block keyword) | Details: keyword=payment, intent=REQUEST
+2026-01-30 12:59:04,433 - Worker - INFO - Email 3297 completed. Intent: REQUEST
+2026-01-30 12:59:04,457 - Worker - INFO - Processing Email ID: 3299 - Subject: Premium Payment Mode Change - Policy #126188898
+2026-01-30 12:59:04,613 - Brain - INFO - Invoking RAG Chain...
+2026-01-30 13:00:12,450 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-30 13:00:25,810 - Brain - INFO - Analysis complete.
+2026-01-30 13:00:25,812 - Worker - INFO - Email 3298 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEGATIVE, Keyword: update)
+2026-01-30 13:00:30,127 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-30 13:00:32,983 - ReplyGenerator - INFO - Generating reply: Pattern=PATTERN_A, Intent=REQUEST, Priority=MEDIUM
+2026-01-30 13:02:01,969 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-30 13:02:13,205 - Brain - INFO - Analysis complete.
+2026-01-30 13:02:13,208 - Worker - INFO - Email 3299 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-30 13:02:13,208 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: LOW_CONFIDENCE (Confidence level is not High) | Details: confidence=Medium, intent=REQUEST
+2026-01-30 13:02:13,242 - Worker - INFO - Email 3299 completed. Intent: REQUEST
+2026-01-30 13:02:13,263 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-30 13:02:13,264 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-30 13:02:13,270 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-30 13:02:13,278 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-30 13:02:13,279 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-30 13:02:15,856 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-30 13:02:37,308 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 8 emails saved
+2026-01-30 13:02:37,326 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-30 13:02:37,328 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-30 13:02:37,359 - Worker - INFO - Processing Email ID: 3300 - Subject: Bonus Information Request - Policy #710265225
+2026-01-30 13:02:37,464 - Brain - INFO - Invoking RAG Chain...
+2026-01-30 13:02:40,520 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-30 13:02:43,561 - ReplyGenerator - INFO - Reply generated successfully: Pattern=PATTERN_A, Length=93
+2026-01-30 13:02:43,666 - Worker - INFO - Email 3298 completed. Intent: REQUEST
+2026-01-30 13:02:43,764 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-30 13:02:43,785 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-30 13:02:43,843 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-30 13:02:43,913 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-30 13:02:43,924 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-30 13:02:48,265 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-30 13:02:50,155 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-30 13:03:10,595 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 1 emails saved
+2026-01-30 13:03:10,606 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-30 13:03:10,608 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-30 13:03:10,658 - Worker - INFO - Processing Email ID: 3301 - Subject: Premium Payment Mode Change Issue
+2026-01-30 13:03:10,852 - Brain - INFO - Invoking RAG Chain...
+2026-01-30 13:04:13,343 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-30 13:04:25,523 - Brain - INFO - Analysis complete.
+2026-01-30 13:04:25,525 - Worker - INFO - Email 3300 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: information)
+2026-01-30 13:04:25,526 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: LOW_CONFIDENCE (Confidence level is not High) | Details: confidence=Medium, intent=REQUEST
+2026-01-30 13:04:25,556 - Worker - INFO - Email 3300 completed. Intent: REQUEST
+2026-01-30 13:04:25,584 - Worker - INFO - Processing Email ID: 3346 - Subject: Policy Revival After Lapse - Policy #139419873
+2026-01-30 13:04:25,661 - Brain - INFO - Invoking RAG Chain...
+2026-01-30 13:04:37,294 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-30 13:04:41,418 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-30 13:06:17,190 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-30 13:06:29,669 - Brain - INFO - Analysis complete.
+2026-01-30 13:06:29,679 - Worker - INFO - Email 3301 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-30 13:06:29,689 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: LOW_CONFIDENCE (Confidence level is not High) | Details: confidence=Medium, intent=REQUEST
+2026-01-30 13:06:29,735 - Worker - INFO - Email 3301 completed. Intent: REQUEST
+2026-01-30 13:06:29,793 - Worker - INFO - Processing Email ID: 3396 - Subject: Premium Receipt Missing - Policy #863067971
+2026-01-30 13:06:29,869 - Brain - INFO - Invoking RAG Chain...
+2026-01-30 13:07:23,335 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-30 13:07:34,465 - Brain - INFO - Analysis complete.
+2026-01-30 13:07:34,467 - Worker - INFO - Email 3346 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-30 13:07:34,468 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: LOW_CONFIDENCE (Confidence level is not High) | Details: confidence=Medium, intent=REQUEST
+2026-01-30 13:07:34,484 - Worker - INFO - Email 3346 completed. Intent: REQUEST
+2026-01-30 13:07:34,502 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-30 13:07:34,503 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-30 13:07:34,510 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-30 13:07:34,537 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-30 13:07:34,538 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-30 13:07:37,696 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-30 13:07:39,205 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-30 13:07:57,532 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-30 13:07:57,555 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-30 13:07:57,559 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-30 13:07:57,586 - Worker - INFO - Processing Email ID: 3397 - Subject: Address Change Confirmation - Policy #860472482
+2026-01-30 13:07:57,688 - Brain - INFO - Invoking RAG Chain...
+2026-01-30 13:09:04,409 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-30 13:09:17,146 - Brain - INFO - Analysis complete.
+2026-01-30 13:09:17,148 - Worker - INFO - Email 3396 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-30 13:09:22,108 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-30 13:09:24,732 - ReplyGenerator - INFO - Generating reply: Pattern=PATTERN_A, Intent=REQUEST, Priority=MEDIUM
+2026-01-30 13:10:45,483 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-30 13:10:57,754 - Brain - INFO - Analysis complete.
+2026-01-30 13:10:57,756 - Worker - INFO - Email 3397 - Priority: MEDIUM (Intent: POLICY_UPDATE, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-30 13:10:57,760 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: PATTERN_NOT_FOUND (Intent does not map to a safe pattern) | Details: intent=POLICY_UPDATE
+2026-01-30 13:10:57,793 - Worker - INFO - Email 3397 completed. Intent: POLICY_UPDATE
+2026-01-30 13:10:57,811 - Worker - INFO - Processing Email ID: 3398 - Subject: Address Change Confirmation - Policy #310046443
+2026-01-30 13:10:57,892 - Brain - INFO - Invoking RAG Chain...
+2026-01-30 13:11:17,032 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-30 13:11:19,651 - ReplyGenerator - INFO - Reply generated successfully: Pattern=PATTERN_A, Length=93
+2026-01-30 13:11:19,684 - Worker - INFO - Email 3396 completed. Intent: REQUEST
+2026-01-30 13:11:19,701 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-30 13:11:19,706 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-30 13:11:19,715 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-30 13:11:19,724 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-30 13:11:19,725 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-30 13:11:24,082 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-30 13:11:24,295 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-30 13:11:43,507 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 1 emails saved
+2026-01-30 13:11:43,527 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-30 13:11:43,528 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-30 13:11:43,555 - Worker - INFO - Processing Email ID: 3399 - Subject: Premium Payment Overdue - Need Extension - Policy #147159468
+2026-01-30 13:11:43,640 - Brain - INFO - Invoking RAG Chain...
+2026-01-30 13:12:47,468 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-30 13:12:59,474 - Brain - INFO - Analysis complete.
+2026-01-30 13:12:59,476 - Worker - INFO - Email 3398 - Priority: MEDIUM (Intent: POLICY_UPDATE, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-30 13:12:59,478 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: PATTERN_NOT_FOUND (Intent does not map to a safe pattern) | Details: intent=POLICY_UPDATE
+2026-01-30 13:12:59,509 - Worker - INFO - Email 3398 completed. Intent: POLICY_UPDATE
+2026-01-30 13:12:59,526 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-30 13:12:59,527 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-30 13:12:59,533 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-30 13:12:59,543 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-30 13:12:59,544 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-30 13:13:02,096 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-30 13:13:03,727 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-30 13:13:24,156 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-30 13:13:24,184 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-30 13:13:24,184 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-30 13:13:24,219 - Worker - INFO - Processing Email ID: 3400 - Subject: Address Change Confirmation - Policy #359355212
+2026-01-30 13:13:24,393 - Brain - INFO - Invoking RAG Chain...
+2026-01-30 13:14:41,337 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-30 13:14:52,395 - Brain - INFO - Analysis complete.
+2026-01-30 13:14:52,397 - Worker - INFO - Email 3399 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEGATIVE, Keyword: policy)
+2026-01-30 13:14:52,398 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: HARD_BLOCK_KEYWORD (Contains hard block keyword) | Details: keyword=payment, intent=REQUEST
+2026-01-30 13:14:52,425 - Worker - INFO - Email 3399 completed. Intent: REQUEST
+2026-01-30 13:14:52,443 - Worker - INFO - Processing Email ID: 3401 - Subject: complaint regarding the delay
+2026-01-30 13:14:52,446 - Worker - INFO - Email 3401 - Priority: MEDIUM (Intent: GENERAL_ENQUIRY, Sentiment: NEUTRAL)
+2026-01-30 13:14:52,448 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: LOW_CONFIDENCE (Confidence level is not High) | Details: confidence=Low, intent=GENERAL_ENQUIRY
+2026-01-30 13:14:52,470 - Worker - INFO - Email 3401 completed. Intent: GENERAL_ENQUIRY
+2026-01-30 13:14:52,498 - Worker - INFO - Processing Email ID: 3402 - Subject: Premium Payment Mode Change Query
+2026-01-30 13:14:52,676 - Brain - INFO - Invoking RAG Chain...
+2026-01-30 13:14:57,079 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-30 13:15:11,248 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-30 13:16:33,543 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-30 13:16:46,321 - Brain - INFO - Analysis complete.
+2026-01-30 13:16:46,323 - Worker - INFO - Email 3400 - Priority: MEDIUM (Intent: POLICY_UPDATE, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-30 13:16:46,324 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: PATTERN_NOT_FOUND (Intent does not map to a safe pattern) | Details: intent=POLICY_UPDATE
+2026-01-30 13:16:46,347 - Worker - INFO - Email 3400 completed. Intent: POLICY_UPDATE
+2026-01-30 13:16:46,366 - Worker - INFO - Processing Email ID: 3403 - Subject: Maturity Benefit Delay Concern
+2026-01-30 13:16:46,524 - Brain - INFO - Invoking RAG Chain...
+2026-01-30 13:17:41,304 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-30 13:17:55,144 - Brain - INFO - Analysis complete.
+2026-01-30 13:17:55,153 - Worker - INFO - Email 3402 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEUTRAL, Keyword: policy)
+2026-01-30 13:17:55,154 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: LOW_CONFIDENCE (Confidence level is not High) | Details: confidence=Medium, intent=REQUEST
+2026-01-30 13:17:55,195 - Worker - INFO - Email 3402 completed. Intent: REQUEST
+2026-01-30 13:17:55,214 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-30 13:17:55,215 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-30 13:17:55,222 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-30 13:17:55,232 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-30 13:17:55,233 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-30 13:17:59,578 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-30 13:18:08,467 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-30 13:18:19,465 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-30 13:18:19,479 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-30 13:18:19,479 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-30 13:18:19,495 - Worker - INFO - Processing Email ID: 3446 - Subject: Policy Document Missing
+2026-01-30 13:18:19,574 - Brain - INFO - Invoking RAG Chain...
+2026-01-30 13:19:31,381 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-30 13:19:43,401 - Brain - INFO - Analysis complete.
+2026-01-30 13:19:43,402 - Worker - INFO - Email 3403 - Priority: MEDIUM (Intent: REQUEST, Sentiment: NEGATIVE, Keyword: update)
+2026-01-30 13:19:43,403 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: HARD_BLOCK_KEYWORD (Contains hard block keyword) | Details: keyword=payments, intent=REQUEST
+2026-01-30 13:19:43,425 - Worker - INFO - Email 3403 completed. Intent: REQUEST
+2026-01-30 13:19:43,433 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-30 13:19:43,434 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-30 13:19:43,437 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-30 13:19:43,442 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-30 13:19:43,443 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-30 13:19:45,263 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-30 13:19:51,099 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2026-01-30 13:20:05,763 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-30 13:20:05,777 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-30 13:20:05,778 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-30 13:20:05,795 - Worker - INFO - Processing Email ID: 3546 - Subject: complaint related queries
+2026-01-30 13:20:05,796 - Worker - INFO - Email 3546 - Priority: MEDIUM (Intent: GENERAL_ENQUIRY, Sentiment: NEUTRAL)
+2026-01-30 13:20:05,797 - ReplyGenerator - INFO - NO_REPLY Decision - Reason: LOW_CONFIDENCE (Confidence level is not High) | Details: confidence=Low, intent=GENERAL_ENQUIRY
+2026-01-30 13:20:05,811 - Worker - INFO - Email 3546 completed. Intent: GENERAL_ENQUIRY
+2026-01-30 13:20:24,661 - Worker - INFO - Worker stopped by user.
+2026-01-31 10:11:08,802 - Worker - INFO - Starting ETL Worker...
+2026-01-31 10:11:08,821 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-31 10:11:08,821 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-31 10:11:08,822 - GmailFetcher - INFO - Access token expired for licinsurance04@gmail.com, refreshing...
+2026-01-31 10:11:09,420 - Main - INFO - Application starting up...
+2026-01-31 10:11:09,421 - Main - INFO - Initializing Database...
+2026-01-31 10:11:09,421 - Database - INFO - Initializing database at C:\Users\KHAN\.gemini\antigravity\scratch\lic-platform\backend\data\emails.db
+2026-01-31 10:11:09,427 - Database - INFO - Database initialized successfully
+2026-01-31 10:11:09,431 - Main - INFO - Checking for Policy Documents (RAG)...
+2026-01-31 10:11:09,433 - RAG - INFO - Loading Embedding Model (gemma2:2b)...
+2026-01-31 10:11:10,403 - GmailFetcher - INFO - Token refreshed successfully for licinsurance04@gmail.com
+2026-01-31 10:11:10,421 - Database - INFO - Gmail config saved for licinsurance04@gmail.com
+2026-01-31 10:11:10,432 - GmailFetcher - INFO - Updated credentials saved for licinsurance04@gmail.com
+2026-01-31 10:11:10,452 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-31 10:11:10,459 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-31 10:11:10,459 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-31 10:11:12,165 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-01-31 10:11:12,281 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-31 10:11:12,560 - RAG - INFO - Vector store already contains documents. Skipping re-ingestion.
+2026-01-31 10:11:12,561 - Main - INFO - Email processing worker task created
+2026-01-31 10:11:13,566 - Main - INFO - Starting email processing worker...
+2026-01-31 10:11:13,567 - Worker - INFO - Starting ETL Worker...
+2026-01-31 10:11:13,579 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-31 10:11:13,579 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-31 10:11:13,586 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-31 10:11:13,592 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-31 10:11:13,592 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-31 10:11:16,037 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-31 10:11:32,657 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-31 10:11:32,670 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-31 10:11:32,671 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-31 10:11:35,428 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-31 10:11:35,447 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-31 10:11:35,447 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-31 10:12:04,541 - Worker - INFO - Starting ETL Worker...
+2026-01-31 10:12:04,579 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-31 10:12:04,579 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-31 10:12:04,585 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-31 10:12:04,591 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-31 10:12:04,592 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-31 10:12:04,704 - Main - INFO - Application starting up...
+2026-01-31 10:12:04,705 - Main - INFO - Initializing Database...
+2026-01-31 10:12:04,706 - Database - INFO - Initializing database at C:\Users\KHAN\.gemini\antigravity\scratch\lic-platform\backend\data\emails.db
+2026-01-31 10:12:04,711 - Database - INFO - Database initialized successfully
+2026-01-31 10:12:04,714 - Main - INFO - Checking for Policy Documents (RAG)...
+2026-01-31 10:12:04,716 - RAG - INFO - Loading Embedding Model (gemma2:2b)...
+2026-01-31 10:12:06,229 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-31 10:12:06,857 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-01-31 10:12:07,211 - RAG - INFO - Vector store already contains documents. Skipping re-ingestion.
+2026-01-31 10:12:07,213 - Main - INFO - Email processing worker task created
+2026-01-31 10:12:07,216 - Main - INFO - Application shutting down...
+2026-01-31 10:17:02,576 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-31 10:17:02,577 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-31 10:17:02,593 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-31 10:17:02,599 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-31 10:17:02,600 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-31 10:17:04,007 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-31 10:17:05,406 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-31 10:17:05,407 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-31 10:17:05,411 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-31 10:17:05,422 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-31 10:17:05,423 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-31 10:17:06,977 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-31 10:17:25,440 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-31 10:17:25,458 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-31 10:17:25,458 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-31 10:17:31,161 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-31 10:17:31,173 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-31 10:17:31,175 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-31 10:22:31,250 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-31 10:22:31,259 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-31 10:22:31,264 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-31 10:22:31,269 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-31 10:22:31,270 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-31 10:22:33,224 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-31 10:22:53,703 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-31 10:22:53,715 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-31 10:22:53,715 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-31 10:27:53,783 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-31 10:27:53,784 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-31 10:27:53,789 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-31 10:27:53,795 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-31 10:27:53,796 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-31 10:27:55,787 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-31 10:28:18,448 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-31 10:28:18,462 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-31 10:28:18,462 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-31 11:54:23,822 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-31 11:54:23,822 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-31 11:54:23,823 - GmailFetcher - INFO - Access token expired for licinsurance04@gmail.com, refreshing...
+2026-01-31 11:54:23,904 - GmailFetcher - ERROR - OAuth authentication failed: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("HTTPSConnection(host='oauth2.googleapis.com', port=443): Failed to resolve 'oauth2.googleapis.com' ([Errno 11001] getaddrinfo failed)"))
+2026-01-31 11:54:23,926 - Worker - ERROR - Gmail sync failed for licinsurance04@gmail.com: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("HTTPSConnection(host='oauth2.googleapis.com', port=443): Failed to resolve 'oauth2.googleapis.com' ([Errno 11001] getaddrinfo failed)"))
+2026-01-31 11:54:24,050 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: failed
+2026-01-31 11:54:24,051 - Worker - INFO - Gmail sync completed: 0/1 accounts successful
+2026-01-31 13:58:14,943 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-31 13:58:14,944 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-31 13:58:14,944 - GmailFetcher - INFO - Access token expired for licinsurance04@gmail.com, refreshing...
+2026-01-31 13:58:14,949 - GmailFetcher - ERROR - OAuth authentication failed: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("HTTPSConnection(host='oauth2.googleapis.com', port=443): Failed to resolve 'oauth2.googleapis.com' ([Errno 11001] getaddrinfo failed)"))
+2026-01-31 13:58:14,949 - Worker - ERROR - Gmail sync failed for licinsurance04@gmail.com: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("HTTPSConnection(host='oauth2.googleapis.com', port=443): Failed to resolve 'oauth2.googleapis.com' ([Errno 11001] getaddrinfo failed)"))
+2026-01-31 13:58:14,961 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: failed
+2026-01-31 13:58:14,961 - Worker - INFO - Gmail sync completed: 0/1 accounts successful
+2026-01-31 14:03:15,057 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-31 14:03:15,059 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-31 14:03:15,061 - GmailFetcher - INFO - Access token expired for licinsurance04@gmail.com, refreshing...
+2026-01-31 14:03:16,598 - GmailFetcher - INFO - Token refreshed successfully for licinsurance04@gmail.com
+2026-01-31 14:03:16,613 - Database - INFO - Gmail config saved for licinsurance04@gmail.com
+2026-01-31 14:03:16,622 - GmailFetcher - INFO - Updated credentials saved for licinsurance04@gmail.com
+2026-01-31 14:03:16,625 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-31 14:03:16,628 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-31 14:03:16,629 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-31 14:03:18,518 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-31 14:03:37,238 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-31 14:03:37,254 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-31 14:03:37,255 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-31 14:08:37,321 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-31 14:08:37,322 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-31 14:08:37,328 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-31 14:08:37,347 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-31 14:08:37,348 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-31 14:08:39,343 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-31 14:08:57,115 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-31 14:08:57,130 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-31 14:08:57,130 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-31 14:13:57,190 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-31 14:13:57,190 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-31 14:13:57,194 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-31 14:13:57,200 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-31 14:13:57,201 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-31 14:13:59,106 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-31 14:14:16,732 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-31 14:14:16,743 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-31 14:14:16,744 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-31 14:19:16,814 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-31 14:19:16,815 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-31 14:19:16,820 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-31 14:19:16,826 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-31 14:19:16,827 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-31 14:19:18,815 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-31 14:19:38,202 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-31 14:19:38,218 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-31 14:19:38,218 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-31 14:24:38,277 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-31 14:24:38,278 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-31 14:24:38,281 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-31 14:24:38,286 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-31 14:24:38,287 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-31 14:24:39,953 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-31 14:24:57,628 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-31 14:24:57,641 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-31 14:24:57,641 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-31 14:29:57,727 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-31 14:29:57,728 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-31 14:29:57,735 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-31 14:29:57,750 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-31 14:29:57,750 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-31 14:29:59,800 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-31 14:30:19,007 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-31 14:30:19,017 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-31 14:30:19,017 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-31 14:35:19,092 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-31 14:35:19,093 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-31 14:35:19,102 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-31 14:35:19,110 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-31 14:35:19,111 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-31 14:35:21,177 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-31 14:35:39,658 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-31 14:35:39,683 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-31 14:35:39,684 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-31 14:40:39,770 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-31 14:40:39,771 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-31 14:40:39,780 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-01-31 14:40:39,788 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-01-31 14:40:39,788 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-01-31 14:40:41,833 - GmailFetcher - INFO - Found 50 unread emails
+2026-01-31 14:41:01,736 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-01-31 14:41:01,745 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-01-31 14:41:01,746 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-01-31 15:59:57,503 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-31 15:59:57,507 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-31 15:59:57,507 - GmailFetcher - INFO - Access token expired for licinsurance04@gmail.com, refreshing...
+2026-01-31 15:59:57,654 - GmailFetcher - ERROR - OAuth authentication failed: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("HTTPSConnection(host='oauth2.googleapis.com', port=443): Failed to resolve 'oauth2.googleapis.com' ([Errno 11001] getaddrinfo failed)"))
+2026-01-31 15:59:57,655 - Worker - ERROR - Gmail sync failed for licinsurance04@gmail.com: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("HTTPSConnection(host='oauth2.googleapis.com', port=443): Failed to resolve 'oauth2.googleapis.com' ([Errno 11001] getaddrinfo failed)"))
+2026-01-31 15:59:57,733 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: failed
+2026-01-31 15:59:57,734 - Worker - INFO - Gmail sync completed: 0/1 accounts successful
+2026-01-31 19:21:44,831 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-01-31 19:21:44,831 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-01-31 19:21:44,831 - GmailFetcher - INFO - Access token expired for licinsurance04@gmail.com, refreshing...
+2026-01-31 19:21:44,841 - GmailFetcher - ERROR - OAuth authentication failed: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("HTTPSConnection(host='oauth2.googleapis.com', port=443): Failed to resolve 'oauth2.googleapis.com' ([Errno 11001] getaddrinfo failed)"))
+2026-01-31 19:21:44,842 - Worker - ERROR - Gmail sync failed for licinsurance04@gmail.com: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("HTTPSConnection(host='oauth2.googleapis.com', port=443): Failed to resolve 'oauth2.googleapis.com' ([Errno 11001] getaddrinfo failed)"))
+2026-01-31 19:21:44,847 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: failed
+2026-01-31 19:21:44,847 - Worker - INFO - Gmail sync completed: 0/1 accounts successful
+2026-02-02 16:04:51,829 - Worker - INFO - Starting ETL Worker...
+2026-02-02 16:04:51,874 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-02-02 16:04:51,874 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-02-02 16:04:51,874 - GmailFetcher - INFO - Access token expired for licinsurance04@gmail.com, refreshing...
+2026-02-02 16:04:51,967 - Main - INFO - Application starting up...
+2026-02-02 16:04:51,968 - Main - INFO - Initializing Database...
+2026-02-02 16:04:51,969 - Database - INFO - Initializing database at C:\Users\KHAN\.gemini\antigravity\scratch\lic-platform\backend\data\emails.db
+2026-02-02 16:04:51,973 - Database - INFO - Database initialized successfully
+2026-02-02 16:04:51,975 - Main - INFO - Checking for Policy Documents (RAG)...
+2026-02-02 16:04:51,977 - RAG - INFO - Loading Embedding Model (gemma2:2b)...
+2026-02-02 16:04:52,745 - GmailFetcher - INFO - Token refreshed successfully for licinsurance04@gmail.com
+2026-02-02 16:04:52,755 - Database - INFO - Gmail config saved for licinsurance04@gmail.com
+2026-02-02 16:04:52,767 - GmailFetcher - INFO - Updated credentials saved for licinsurance04@gmail.com
+2026-02-02 16:04:52,775 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-02-02 16:04:52,781 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-02-02 16:04:52,782 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-02-02 16:04:53,295 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-02-02 16:04:53,532 - RAG - INFO - Vector store already contains documents. Skipping re-ingestion.
+2026-02-02 16:04:53,534 - Main - INFO - Email processing worker task created
+2026-02-02 16:04:54,063 - GmailFetcher - INFO - Found 50 unread emails
+2026-02-02 16:04:54,539 - Main - INFO - Starting email processing worker...
+2026-02-02 16:04:54,539 - Worker - INFO - Starting ETL Worker...
+2026-02-02 16:04:54,546 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-02-02 16:04:54,546 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-02-02 16:04:54,550 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-02-02 16:04:54,553 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-02-02 16:04:54,553 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-02-02 16:04:55,679 - GmailFetcher - INFO - Found 50 unread emails
+2026-02-02 16:05:36,336 - GmailFetcher - WARNING - Error parsing message 19c090c9c82e8d1a: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-02-02 16:05:36,342 - GmailFetcher - WARNING - Error parsing message 19c090a41850b104: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-02-02 16:05:38,805 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-02-02 16:05:38,817 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-02-02 16:05:38,818 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-02-02 16:05:40,737 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-02-02 16:05:40,747 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-02-02 16:05:40,748 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-02-02 16:10:08,691 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-02-02 16:10:08,692 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-02-02 16:10:08,697 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-02-02 16:10:08,702 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-02-02 16:10:08,703 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-02-02 16:10:09,649 - GmailFetcher - ERROR - Error fetching unread emails: Unable to find the server at gmail.googleapis.com
+2026-02-02 16:10:09,650 - Worker - ERROR - Gmail sync failed for licinsurance04@gmail.com: Unable to find the server at gmail.googleapis.com
+2026-02-02 16:10:09,666 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: failed
+2026-02-02 16:10:09,667 - Worker - INFO - Gmail sync completed: 0/1 accounts successful
+2026-02-02 16:10:10,616 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-02-02 16:10:10,617 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-02-02 16:10:10,621 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-02-02 16:10:10,625 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-02-02 16:10:10,626 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-02-02 16:10:11,621 - GmailFetcher - ERROR - Error fetching unread emails: Unable to find the server at gmail.googleapis.com
+2026-02-02 16:10:11,622 - Worker - ERROR - Gmail sync failed for licinsurance04@gmail.com: Unable to find the server at gmail.googleapis.com
+2026-02-02 16:10:11,636 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: failed
+2026-02-02 16:10:11,637 - Worker - INFO - Gmail sync completed: 0/1 accounts successful
+2026-02-02 16:25:30,183 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-02-02 16:25:30,183 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-02-02 16:25:30,185 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-02-02 16:25:30,186 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-02-02 16:25:30,187 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-02-02 16:25:30,506 - GmailFetcher - ERROR - Error fetching unread emails: Unable to find the server at gmail.googleapis.com
+2026-02-02 16:25:30,506 - Worker - ERROR - Gmail sync failed for licinsurance04@gmail.com: Unable to find the server at gmail.googleapis.com
+2026-02-02 16:25:30,522 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: failed
+2026-02-02 16:25:30,522 - Worker - INFO - Gmail sync completed: 0/1 accounts successful
+2026-02-02 16:25:32,161 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-02-02 16:25:32,195 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-02-02 16:25:32,224 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-02-02 16:25:32,246 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-02-02 16:25:32,253 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-02-02 16:25:34,419 - GmailFetcher - ERROR - Error fetching unread emails: Unable to find the server at gmail.googleapis.com
+2026-02-02 16:25:34,420 - Worker - ERROR - Gmail sync failed for licinsurance04@gmail.com: Unable to find the server at gmail.googleapis.com
+2026-02-02 16:25:34,441 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: failed
+2026-02-02 16:25:34,443 - Worker - INFO - Gmail sync completed: 0/1 accounts successful

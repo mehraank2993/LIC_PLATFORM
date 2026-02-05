@@ -149,6 +149,28 @@ def init_db():
             logger.info("Migrating database: Adding generated_reply column")
             c.execute("ALTER TABLE emails ADD COLUMN generated_reply TEXT")
 
+        # Schema Migration: Ensure reply_status and replied_at exist (Phase 2)
+        try:
+            c.execute("SELECT reply_status FROM emails LIMIT 1")
+        except sqlite3.OperationalError:
+            logger.info("Migrating database: Adding reply_status and replied_at columns")
+            c.execute("ALTER TABLE emails ADD COLUMN reply_status TEXT DEFAULT 'PENDING'")
+            c.execute("ALTER TABLE emails ADD COLUMN replied_at DATETIME")
+
+        # Create Audit Logs Table (Phase 5)
+        c.execute('''
+            CREATE TABLE IF NOT EXISTS audit_logs (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                email_id INTEGER NOT NULL,
+                action TEXT NOT NULL, -- 'APPROVED', 'REJECTED', 'SENT'
+                user_id TEXT DEFAULT 'system',
+                details TEXT,
+                timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+                FOREIGN KEY(email_id) REFERENCES emails(id)
+            )
+        ''')
+        c.execute("CREATE INDEX IF NOT EXISTS idx_audit_email_id ON audit_logs(email_id)")
+
 def save_email(google_id: str, sender: str, subject: str, body: str, received_at: datetime) -> bool:
     """Save a new email to the database. Returns True if saved, False if duplicate."""
     try:
@@ -250,6 +272,22 @@ def update_email_analysis(email_id: int, redacted_body: str, analysis: Dict[str,
             SET body_redacted = ?, analysis = ?, suggested_action = ?, generated_reply = ?, status = ?, processed_at = ?
             WHERE id = ?
         ''', (redacted_body, json.dumps(analysis), suggested_action, generated_reply, status, datetime.now(), email_id))
+
+def update_reply_status(email_id: int, status: str, replied_at: datetime = None):
+    """Update the reply status of an email."""
+    with get_db_cursor(commit=True) as c:
+        if replied_at:
+            c.execute("UPDATE emails SET reply_status = ?, replied_at = ? WHERE id = ?", (status, replied_at, email_id))
+        else:
+            c.execute("UPDATE emails SET reply_status = ? WHERE id = ?", (status, email_id))
+
+def log_audit_action(email_id: int, action: str, details: str = None, user_id: str = 'system'):
+    """Log an action to the audit trail."""
+    with get_db_cursor(commit=True) as c:
+        c.execute('''
+            INSERT INTO audit_logs (email_id, action, user_id, details, timestamp)
+            VALUES (?, ?, ?, ?, ?)
+        ''', (email_id, action, user_id, details, datetime.now()))
 
 def get_stats() -> Dict[str, Any]:
     with get_db_cursor() as c:

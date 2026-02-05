@@ -23,8 +23,12 @@ try:
     from google.auth.oauthlib.flow import InstalledAppFlow
     HAS_OAUTH = True
 except ImportError:
-    HAS_OAUTH = False
-    InstalledAppFlow = None
+    try:
+        from google_auth_oauthlib.flow import InstalledAppFlow
+        HAS_OAUTH = True
+    except ImportError:
+        HAS_OAUTH = False
+        InstalledAppFlow = None
 
 # Setup Logging
 logger = logging.getLogger("GmailFetcher")
@@ -462,6 +466,66 @@ class GmailFetcher:
         except Exception as e:
             logger.warning(f"Error parsing date '{date_str}': {e}, using current time")
             return datetime.now()
+
+    def send_reply(self, message_id: str, reply_text: str, thread_id: str = None) -> Optional[str]:
+        """
+        Send a reply to an email thread.
+        
+        Args:
+            message_id: Original message ID (for threading headers)
+            reply_text: Content of the reply
+            thread_id: Gmail thread ID (optional, but recommended for grouping)
+            
+        Returns:
+            Sent message ID if successful, None otherwise
+        """
+        try:
+            # 1. Fetch original message to get headers (To, Subject, References)
+            original = self.service.users().messages().get(
+                userId='me', 
+                id=message_id, 
+                format='metadata',
+                metadataHeaders=['Subject', 'From', 'Message-ID', 'References']
+            ).execute()
+            
+            headers = original['payload']['headers']
+            subject = self._get_header_value(headers, 'Subject')
+            sender = self._get_header_value(headers, 'From')
+            original_msg_id = self._get_header_value(headers, 'Message-ID')
+            references = self._get_header_value(headers, 'References')
+            
+            # 2. Construct Reply Headers
+            if not subject.lower().startswith('re:'):
+                subject = f"Re: {subject}"
+            
+            # References: join existing + original message ID
+            new_references = f"{references} {original_msg_id}".strip()
+            
+            # 3. Create MIME Message
+            message = MIMEText(reply_text)
+            message['to'] = sender
+            message['subject'] = subject
+            message['In-Reply-To'] = original_msg_id
+            message['References'] = new_references
+            
+            # 4. Encode and Send
+            raw_message = base64.urlsafe_b64encode(message.as_bytes()).decode('utf-8')
+            body = {'raw': raw_message}
+            
+            if thread_id:
+                body['threadId'] = thread_id
+            
+            sent_message = self.service.users().messages().send(
+                userId='me', 
+                body=body
+            ).execute()
+            
+            logger.info(f"Reply sent successfully. ID: {sent_message['id']}")
+            return sent_message['id']
+            
+        except Exception as e:
+            logger.error(f"Error sending reply: {e}")
+            raise
 
 
 # Helper function for quick setup

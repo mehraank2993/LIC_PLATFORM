@@ -24,29 +24,14 @@ async def lifespan(app: FastAPI):
     logger.info("Initializing Database...")
     database.init_db()
     
-    logger.info("Checking for Policy Documents (RAG)...")
-    # Run RAG ingestion in a thread to avoid blocking
-    await asyncio.to_thread(rag.ingest_docs)
-    
-    # Create worker task reference
-    worker_task = None
-    
-    # Define worker coroutine
-    async def start_worker():
-        await asyncio.sleep(1)  # Brief delay to ensure server is ready
-        logger.info("Starting email processing worker...")
-        await asyncio.to_thread(worker.start_loop)
-    
-    # Start worker in background
-    worker_task = asyncio.create_task(start_worker())
-    logger.info("Email processing worker task created")
+    # RAG ingestion and Worker are handled by run.py in separate processes
+    # to avoid duplication and locking issues.
     
     yield
     
     # Shutdown
+    # Shutdown
     logger.info("Application shutting down...")
-    if worker_task and not worker_task.done():
-        worker_task.cancel()
 
 app = FastAPI(
     title="LIC Email Intelligence Platform",
