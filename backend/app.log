@@ -11858,3 +11858,128 @@
 2026-02-05 18:36:44,327 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
 2026-02-05 18:36:44,329 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
 2026-02-05 18:38:51,333 - Worker - INFO - Worker stopped by user.
+2026-02-08 18:12:14,193 - Worker - INFO - Starting ETL Worker...
+2026-02-08 18:12:14,204 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-02-08 18:12:14,205 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-02-08 18:12:14,205 - GmailFetcher - INFO - Access token expired for licinsurance04@gmail.com, refreshing...
+2026-02-08 18:12:14,368 - Main - INFO - Application starting up...
+2026-02-08 18:12:14,369 - Main - INFO - Initializing Database...
+2026-02-08 18:12:14,369 - Database - INFO - Initializing database at C:\Users\KHAN\.gemini\antigravity\scratch\lic-platform\backend\data\emails.db
+2026-02-08 18:12:14,373 - Database - INFO - Database initialized successfully
+2026-02-08 18:12:15,023 - GmailFetcher - INFO - Token refreshed successfully for licinsurance04@gmail.com
+2026-02-08 18:12:15,041 - Database - INFO - Gmail config saved for licinsurance04@gmail.com
+2026-02-08 18:12:15,051 - GmailFetcher - INFO - Updated credentials saved for licinsurance04@gmail.com
+2026-02-08 18:12:15,058 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-02-08 18:12:15,064 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-02-08 18:12:15,064 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-02-08 18:12:16,139 - GmailFetcher - INFO - Found 50 unread emails
+2026-02-08 18:12:44,030 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-02-08 18:12:44,042 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-02-08 18:12:44,043 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-02-08 18:18:13,918 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-02-08 18:18:13,920 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-02-08 18:18:13,923 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-02-08 18:18:13,935 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-02-08 18:18:13,936 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-02-08 18:18:15,347 - GmailFetcher - INFO - Found 50 unread emails
+2026-02-08 18:18:37,683 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-02-08 18:18:37,696 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-02-08 18:18:37,697 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-02-08 18:23:37,745 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-02-08 18:23:37,746 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-02-08 18:23:37,750 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-02-08 18:23:37,755 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-02-08 18:23:37,755 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-02-08 18:23:39,135 - GmailFetcher - INFO - Found 50 unread emails
+2026-02-13 16:05:23,544 - Worker - INFO - Starting ETL Worker...
+2026-02-13 16:05:23,565 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-02-13 16:05:23,565 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-02-13 16:05:23,566 - GmailFetcher - INFO - Access token expired for licinsurance04@gmail.com, refreshing...
+2026-02-13 16:05:23,656 - Main - INFO - Application starting up...
+2026-02-13 16:05:23,657 - Main - INFO - Initializing Database...
+2026-02-13 16:05:23,657 - Database - INFO - Initializing database at C:\Users\KHAN\.gemini\antigravity\scratch\lic-platform\backend\data\emails.db
+2026-02-13 16:05:23,670 - Database - INFO - Database initialized successfully
+2026-02-13 16:05:25,436 - GmailFetcher - ERROR - OAuth authentication failed: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+2026-02-13 16:05:25,437 - Worker - ERROR - Gmail sync failed for licinsurance04@gmail.com: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+2026-02-13 16:05:25,451 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: failed
+2026-02-13 16:05:25,454 - Worker - INFO - Gmail sync completed: 0/1 accounts successful
+2026-02-13 16:10:55,305 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-02-13 16:10:55,306 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-02-13 16:10:55,306 - GmailFetcher - INFO - Access token expired for licinsurance04@gmail.com, refreshing...
+2026-02-13 16:10:56,265 - GmailFetcher - ERROR - OAuth authentication failed: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+2026-02-13 16:10:56,265 - Worker - ERROR - Gmail sync failed for licinsurance04@gmail.com: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+2026-02-13 16:10:56,285 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: failed
+2026-02-13 16:10:56,287 - Worker - INFO - Gmail sync completed: 0/1 accounts successful
+2026-02-13 16:19:58,636 - Main - INFO - Application starting up...
+2026-02-13 16:19:58,636 - Main - INFO - Initializing Database...
+2026-02-13 16:19:58,637 - Database - INFO - Initializing database at C:\Users\KHAN\.gemini\antigravity\scratch\lic-platform\backend\data\emails.db
+2026-02-13 16:19:58,640 - Database - INFO - Database initialized successfully
+2026-02-13 16:24:28,461 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-02-13 16:24:28,465 - GmailFetcher - INFO - Access token expired for licinsurance04@gmail.com, refreshing...
+2026-02-13 16:24:32,659 - Database - INFO - Gmail sync toggled for licinsurance04@gmail.com: False
+2026-02-13 16:24:34,616 - Database - INFO - Gmail sync toggled for licinsurance04@gmail.com: True
+2026-02-13 16:24:36,683 - GmailFetcher - ERROR - OAuth authentication failed: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+2026-02-13 16:24:36,684 - Worker - ERROR - Gmail sync failed for licinsurance04@gmail.com: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+2026-02-13 16:24:36,719 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: failed
+2026-02-13 16:24:39,403 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-02-13 16:24:39,404 - GmailFetcher - INFO - Access token expired for licinsurance04@gmail.com, refreshing...
+2026-02-13 16:24:41,054 - GmailFetcher - ERROR - OAuth authentication failed: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+2026-02-13 16:24:41,056 - Worker - ERROR - Gmail sync failed for licinsurance04@gmail.com: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+2026-02-13 16:24:41,093 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: failed
+2026-02-13 16:33:49,067 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-02-13 16:33:49,068 - GmailFetcher - INFO - Access token expired for licinsurance04@gmail.com, refreshing...
+2026-02-13 16:33:50,252 - GmailFetcher - ERROR - OAuth authentication failed: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+2026-02-13 16:33:50,252 - Worker - ERROR - Gmail sync failed for licinsurance04@gmail.com: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+2026-02-13 16:33:50,273 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: failed
+2026-02-13 16:33:50,497 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-02-13 16:33:50,497 - GmailFetcher - INFO - Access token expired for licinsurance04@gmail.com, refreshing...
+2026-02-13 16:33:51,200 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-02-13 16:33:51,201 - GmailFetcher - INFO - Access token expired for licinsurance04@gmail.com, refreshing...
+2026-02-13 16:33:51,716 - GmailFetcher - ERROR - OAuth authentication failed: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+2026-02-13 16:33:51,717 - Worker - ERROR - Gmail sync failed for licinsurance04@gmail.com: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+2026-02-13 16:33:51,748 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: failed
+2026-02-13 16:33:52,639 - GmailFetcher - ERROR - OAuth authentication failed: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+2026-02-13 16:33:52,642 - Worker - ERROR - Gmail sync failed for licinsurance04@gmail.com: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+2026-02-13 16:33:52,666 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: failed
+2026-02-13 16:36:06,594 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-02-13 16:36:06,595 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-02-13 16:36:06,595 - GmailFetcher - INFO - Access token expired for licinsurance04@gmail.com, refreshing...
+2026-02-13 16:36:07,739 - GmailFetcher - ERROR - OAuth authentication failed: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+2026-02-13 16:36:07,740 - Worker - ERROR - Gmail sync failed for licinsurance04@gmail.com: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+2026-02-13 16:36:07,763 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: failed
+2026-02-13 16:36:07,767 - Worker - INFO - Gmail sync completed: 0/1 accounts successful
+2026-02-13 16:41:20,660 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-02-13 16:41:20,661 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-02-13 16:41:20,670 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-02-13 16:41:20,676 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-02-13 16:41:20,677 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-02-13 16:41:33,548 - GmailFetcher - INFO - Found 50 unread emails
+2026-02-13 16:41:52,713 - GmailFetcher - WARNING - Error parsing message 19c2dde2325d8714: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-02-13 16:41:55,740 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-02-13 16:41:55,740 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-02-13 16:41:55,743 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-02-13 16:41:55,746 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-02-13 16:41:55,746 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-02-13 16:41:56,813 - GmailFetcher - INFO - Found 50 unread emails
+2026-02-13 16:42:12,684 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-02-13 16:42:12,696 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-02-13 16:42:12,696 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-02-13 16:42:17,181 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-02-13 16:42:17,194 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-02-13 16:42:17,195 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
+2026-02-13 16:42:44,675 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-02-13 16:42:44,682 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-02-13 16:42:44,689 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-02-13 16:42:44,689 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-02-13 16:42:46,019 - GmailFetcher - INFO - Found 50 unread emails
+2026-02-13 16:43:06,133 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-02-13 16:43:06,143 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-02-13 16:43:08,216 - Worker - INFO - Syncing 1 Gmail account(s)
+2026-02-13 16:43:08,217 - Worker - INFO - Starting Gmail sync for licinsurance04@gmail.com (oauth)
+2026-02-13 16:43:08,259 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-02-13 16:43:08,282 - GmailFetcher - INFO - OAuth authentication successful for licinsurance04@gmail.com
+2026-02-13 16:43:08,284 - GmailFetcher - INFO - Fetching 50 unread emails...
+2026-02-13 16:43:09,897 - GmailFetcher - INFO - Found 50 unread emails
+2026-02-13 16:43:30,112 - Worker - INFO - Gmail sync completed for licinsurance04@gmail.com: 0 emails saved
+2026-02-13 16:43:30,126 - Database - INFO - Gmail sync status updated for licinsurance04@gmail.com: success
+2026-02-13 16:43:30,127 - Worker - INFO - Gmail sync completed: 1/1 accounts successful
