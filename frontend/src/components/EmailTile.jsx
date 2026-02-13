@@ -2,36 +2,33 @@ import React, { useState } from 'react';
 import { User, Tag, Lightbulb, Mail, Send, XCircle, Edit, CheckCircle, AlertTriangle } from 'lucide-react';
 
 /**
- * EmailTile Component
+ * EmailTile Component — LIC Light Theme
  * 
- * Displays individual email as a card/tile with priority-based color coding.
- * Now includes HUMAN-IN-THE-LOOP Reply Workflow.
- * 
- * Priority Color Scheme:
- * - HIGH: Red accent border + subtle red background tint
- * - MEDIUM: Gray accent border + neutral background
- * - LOW: Green accent border + subtle green background tint
+ * Priority Color Scheme (Light Mode):
+ * - HIGH: Red left border + light red tint
+ * - MEDIUM: Navy left border + neutral
+ * - LOW: Green left border + light green tint
  */
 
 const getPriorityStyles = (priority) => {
     switch (priority?.toUpperCase()) {
         case 'HIGH':
             return {
-                container: 'bg-red-500/5 border-l-red-500 hover:bg-red-500/10',
-                badge: 'bg-red-900 text-red-300 border-red-700',
-                icon: 'text-red-400'
+                container: 'bg-red-50 border-l-red-500 hover:bg-red-100/70',
+                badge: 'bg-red-100 text-red-700 border-red-200',
+                icon: 'text-red-500'
             };
         case 'LOW':
             return {
-                container: 'bg-green-500/5 border-l-green-500 hover:bg-green-500/10',
-                badge: 'bg-green-900 text-green-300 border-green-700',
-                icon: 'text-green-400'
+                container: 'bg-emerald-50 border-l-emerald-500 hover:bg-emerald-100/70',
+                badge: 'bg-emerald-100 text-emerald-700 border-emerald-200',
+                icon: 'text-emerald-500'
             };
         default: // MEDIUM or undefined
             return {
-                container: 'bg-gray-800 border-l-gray-600 hover:bg-gray-750',
-                badge: 'bg-gray-700 text-gray-300 border-gray-600',
-                icon: 'text-gray-400'
+                container: 'bg-white border-l-amber-500 hover:bg-gray-50',
+                badge: 'bg-amber-50 text-amber-700 border-amber-200',
+                icon: 'text-gray-500'
             };
     }
 };
@@ -39,11 +36,11 @@ const getPriorityStyles = (priority) => {
 const getSentimentStyles = (sentiment) => {
     switch (sentiment?.toUpperCase()) {
         case 'NEGATIVE':
-            return 'bg-red-900 text-red-300 border-red-700';
+            return 'bg-red-50 text-red-700 border-red-200';
         case 'POSITIVE':
-            return 'bg-green-900 text-green-300 border-green-700';
+            return 'bg-emerald-50 text-emerald-700 border-emerald-200';
         default:
-            return 'bg-gray-700 text-gray-300 border-gray-600';
+            return 'bg-gray-100 text-gray-600 border-gray-200';
     }
 };
 
@@ -53,7 +50,7 @@ const EmailTile = ({ email }) => {
 
     // Reply State
     const [replyDraft, setReplyDraft] = useState(email.generated_reply || '');
-    const [status, setStatus] = useState(email.reply_status || 'PENDING'); // PENDING, SENT, REJECTED, ERROR
+    const [status, setStatus] = useState(email.reply_status || 'PENDING');
     const [sending, setSending] = useState(false);
     const [errorMsg, setErrorMsg] = useState(null);
 
@@ -67,9 +64,9 @@ const EmailTile = ({ email }) => {
         setSending(true);
         setErrorMsg(null);
         try {
-            const endpoint = `http://localhost:8001/api/emails/${email.id}/reply`;
+            const endpoint = `http://localhost:8000/api/emails/${email.id}/reply`;
             const payload = {
-                action: action, // 'approve_send' or 'reject'
+                action: action,
                 body: action === 'approve_send' ? replyDraft : null
             };
 
@@ -84,7 +81,6 @@ const EmailTile = ({ email }) => {
                 throw new Error(err.detail || 'Action failed');
             }
 
-            // Update UI on success
             if (action === 'approve_send') {
                 setStatus('SENT');
             } else {
@@ -102,11 +98,11 @@ const EmailTile = ({ email }) => {
         <div
             className={`
                 ${styles.container}
-                border-l-4 border-t border-r border-b border-gray-700
+                border-l-4 border border-gray-200
                 rounded-lg p-4 
                 transition-all duration-200 
                 cursor-default
-                shadow-lg hover:shadow-xl
+                shadow-sm hover:shadow-md
                 flex flex-col h-full
             `}
         >
@@ -116,23 +112,23 @@ const EmailTile = ({ email }) => {
                 <div className="flex justify-between items-start mb-3">
                     <span className={`
                         ${styles.badge}
-                        px-2 py-1 rounded-md text-xs font-bold uppercase border
+                        px-2 py-0.5 rounded-md text-[10px] font-bold uppercase border tracking-wide
                     `}>
                         {priority}
                     </span>
 
                     {/* Status Indicator */}
                     <div className="flex items-center space-x-2">
-                        {status === 'SENT' && <span className="text-green-400 text-xs font-bold flex items-center"><CheckCircle className="w-3 h-3 mr-1" /> SENT</span>}
-                        {status === 'REJECTED' && <span className="text-red-400 text-xs font-bold flex items-center"><XCircle className="w-3 h-3 mr-1" /> REJECTED</span>}
-                        {status === 'PENDING' && <span className="text-gray-400 text-xs font-bold">PENDING REVIEW</span>}
+                        {status === 'SENT' && <span className="text-emerald-600 text-xs font-bold flex items-center"><CheckCircle className="w-3 h-3 mr-1" /> SENT</span>}
+                        {status === 'REJECTED' && <span className="text-red-500 text-xs font-bold flex items-center"><XCircle className="w-3 h-3 mr-1" /> REJECTED</span>}
+                        {status === 'PENDING' && <span className="text-gray-400 text-[10px] font-semibold uppercase tracking-wide">Pending Review</span>}
                     </div>
                 </div>
 
                 {/* Sender */}
                 <div className="flex items-center space-x-2 mb-2">
                     <User className={`w-4 h-4 ${styles.icon}`} />
-                    <span className="text-sm text-gray-300 truncate" title={email.sender}>
+                    <span className="text-sm text-gray-600 truncate font-medium" title={email.sender}>
                         {email.sender}
                     </span>
                 </div>
@@ -140,47 +136,44 @@ const EmailTile = ({ email }) => {
                 {/* Subject */}
                 <div className="flex items-start space-x-2 mb-3">
                     <Mail className={`w-4 h-4 ${styles.icon} mt-0.5 flex-shrink-0`} />
-                    <h3 className="text-sm font-semibold text-white line-clamp-2" title={email.subject}>
+                    <h3 className="text-sm font-semibold text-gray-800 line-clamp-2" title={email.subject}>
                         {email.subject}
                     </h3>
                 </div>
 
                 {/* Summary */}
                 <div className="flex items-start space-x-2 mb-3 min-h-[40px]">
-                    <Lightbulb className="w-4 h-4 text-yellow-500 mt-1 flex-shrink-0" />
-                    <p className="text-xs text-gray-400 line-clamp-3">
+                    <Lightbulb className="w-4 h-4 text-amber-500 mt-1 flex-shrink-0" />
+                    <p className="text-xs text-gray-500 line-clamp-3">
                         {email.analysis?.summary || email.suggested_action || 'Pending Analysis...'}
                     </p>
                 </div>
             </div>
 
-            {/* Spacer to push reply section bottom if needed, but flex-col handles natural flow */}
+            {/* Spacer */}
             <div className="flex-grow"></div>
 
-            {/* ════════════════════════════════════════════════════════════════════════
-               HUMAN-IN-THE-LOOP REPLY PANEL
-               ════════════════════════════════════════════════════════════════════════ */}
-
-            <div className="mt-2 pt-3 border-t border-gray-700">
+            {/* ═══════ HUMAN-IN-THE-LOOP REPLY PANEL ═══════ */}
+            <div className="mt-2 pt-3 border-t border-gray-200">
                 <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-semibold text-gray-400 uppercase flex items-center">
+                    <span className="text-[10px] font-semibold text-gray-400 uppercase flex items-center tracking-wide">
                         <Edit className="w-3 h-3 mr-1" /> Suggested Reply
                     </span>
 
                     {/* Safety Badges */}
-                    {isHighPriority && <span className="text-[10px] bg-red-900/50 text-red-300 px-1.5 py-0.5 rounded border border-red-800">High Priority Block</span>}
-                    {isRestrictedIntent && <span className="text-[10px] bg-orange-900/50 text-orange-300 px-1.5 py-0.5 rounded border border-orange-800">Restricted Intent</span>}
+                    {isHighPriority && <span className="text-[10px] bg-red-100 text-red-600 px-1.5 py-0.5 rounded border border-red-200 font-medium">High Priority Block</span>}
+                    {isRestrictedIntent && <span className="text-[10px] bg-orange-100 text-orange-600 px-1.5 py-0.5 rounded border border-orange-200 font-medium">Restricted Intent</span>}
                 </div>
 
                 {/* Editable Text Area */}
                 {status === 'PENDING' ? (
                     <div className="relative">
-                        {/* Safety Overlay for NO_REPLY or Blocked */}
+                        {/* Safety Overlay */}
                         {(isNoReply || isHighPriority || isRestrictedIntent) && (
-                            <div className="absolute inset-0 bg-gray-900/80 backdrop-blur-[1px] flex flex-col items-center justify-center text-center p-2 rounded-md z-10 border border-gray-700">
-                                <AlertTriangle className="w-6 h-6 text-yellow-500 mb-1" />
-                                <p className="text-xs text-gray-200 font-medium">Manual Handling Required</p>
-                                <p className="text-[10px] text-gray-400">
+                            <div className="absolute inset-0 bg-white/90 backdrop-blur-[2px] flex flex-col items-center justify-center text-center p-2 rounded-md z-10 border border-gray-200">
+                                <AlertTriangle className="w-5 h-5 text-amber-500 mb-1" />
+                                <p className="text-xs text-gray-700 font-medium">Manual Handling Required</p>
+                                <p className="text-[10px] text-gray-500">
                                     {isHighPriority ? "Priority is HIGH." :
                                         isRestrictedIntent ? "Restricted Intent." :
                                             "AI declined to draft a reply."}
@@ -190,10 +183,10 @@ const EmailTile = ({ email }) => {
 
                         <textarea
                             className={`
-                                w-full bg-gray-900/50 border border-gray-700 rounded-md p-2 text-xs text-gray-300 
-                                focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none
-                                resize-none min-h-[100px]
-                                ${(!canSend) ? 'opacity-30' : ''}
+                                w-full bg-gray-50 border border-gray-200 rounded-md p-2 text-xs text-gray-700 
+                                focus:border-blue-400 focus:ring-1 focus:ring-blue-200 outline-none
+                                resize-none min-h-[90px]
+                                ${(!canSend) ? 'opacity-40' : ''}
                             `}
                             value={replyDraft === 'NO_REPLY' ? 'No reply generated.' : replyDraft}
                             onChange={(e) => setReplyDraft(e.target.value)}
@@ -203,8 +196,8 @@ const EmailTile = ({ email }) => {
                 ) : (
                     /* Read-Only View for Sent/Rejected */
                     <div className={`
-                        p-3 rounded-md border text-xs min-h-[80px]
-                        ${status === 'SENT' ? 'bg-green-900/10 border-green-800 text-gray-300' : 'bg-red-900/10 border-red-800 text-gray-400 italic'}
+                        p-3 rounded-md border text-xs min-h-[70px]
+                        ${status === 'SENT' ? 'bg-emerald-50 border-emerald-200 text-gray-700' : 'bg-red-50 border-red-200 text-gray-500 italic'}
                     `}>
                         {status === 'SENT' ? replyDraft : "Reply rejected by operator."}
                     </div>
@@ -212,7 +205,7 @@ const EmailTile = ({ email }) => {
 
                 {/* Error Message */}
                 {errorMsg && (
-                    <div className="mt-2 text-xs text-red-400 bg-red-900/20 p-1.5 rounded border border-red-900/50">
+                    <div className="mt-2 text-xs text-red-600 bg-red-50 p-1.5 rounded border border-red-200">
                         Error: {errorMsg}
                     </div>
                 )}
@@ -227,8 +220,8 @@ const EmailTile = ({ email }) => {
                                 flex-1 py-1.5 px-3 rounded-md text-xs font-bold flex items-center justify-center
                                 transition-colors
                                 ${(!canSend || sending)
-                                    ? 'bg-gray-700 text-gray-500 cursor-not-allowed'
-                                    : 'bg-green-700 hover:bg-green-600 text-white shadow-lg shadow-green-900/20'}
+                                    ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                                    : 'bg-emerald-600 hover:bg-emerald-700 text-white shadow-sm'}
                             `}
                         >
                             {sending ? 'Sending...' : <><Send className="w-3 h-3 mr-1.5" /> Approve & Send</>}
@@ -239,7 +232,7 @@ const EmailTile = ({ email }) => {
                             disabled={sending}
                             className={`
                                 flex-1 py-1.5 px-3 rounded-md text-xs font-bold flex items-center justify-center
-                                border border-gray-600 hover:bg-gray-700 text-gray-300
+                                border border-gray-300 hover:bg-gray-100 text-gray-600
                                 transition-colors
                                 ${sending ? 'opacity-50 cursor-not-allowed' : ''}
                             `}
@@ -251,15 +244,18 @@ const EmailTile = ({ email }) => {
             </div>
 
             {/* Metadata Footer */}
-            <div className="flex flex-wrap gap-2 pt-3 mt-2 border-t border-gray-700/50 opacity-75">
-                <span className="px-1.5 py-0.5 rounded text-[10px] font-medium bg-indigo-900/50 text-indigo-300 border border-indigo-800">
+            <div className="flex flex-wrap gap-1.5 pt-3 mt-2 border-t border-gray-200/80">
+                <span
+                    className="px-1.5 py-0.5 rounded text-[10px] font-semibold border"
+                    style={{ background: '#eef2ff', color: '#001f5b', borderColor: '#c7d2fe' }}
+                >
                     {email.analysis?.intent || 'N/A'}
                 </span>
-                <span className={`px-1.5 py-0.5 rounded text-[10px] font-medium border ${getSentimentStyles(email.analysis?.sentiment)} bg-opacity-50`}>
+                <span className={`px-1.5 py-0.5 rounded text-[10px] font-semibold border ${getSentimentStyles(email.analysis?.sentiment)}`}>
                     {email.analysis?.sentiment || 'N/A'}
                 </span>
                 {email.analysis?.confidence && (
-                    <span className="px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-700 text-gray-400 border border-gray-600">
+                    <span className="px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 border border-gray-200">
                         {email.analysis.confidence}
                     </span>
                 )}

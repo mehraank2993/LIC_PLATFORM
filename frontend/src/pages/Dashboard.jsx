@@ -19,12 +19,12 @@ const Dashboard = () => {
 
     const fetchData = async () => {
         try {
-            const statsRes = await fetch('http://localhost:8001/api/stats');
+            const statsRes = await fetch('http://localhost:8000/api/stats');
             const statsData = await statsRes.json();
             setStats(statsData);
 
             // Fetch with pagination
-            const emailsRes = await fetch(`http://localhost:8001/api/emails?page=${currentPage}&limit=${pageSize}`);
+            const emailsRes = await fetch(`http://localhost:8000/api/emails?page=${currentPage}&limit=${pageSize}`);
             const emailsResponse = await emailsRes.json();
 
             setEmails(emailsResponse.items || []);
@@ -39,7 +39,7 @@ const Dashboard = () => {
 
     const handleInject = async (data) => {
         try {
-            await fetch('http://localhost:8001/api/ingest', {
+            await fetch('http://localhost:8000/api/ingest', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
@@ -55,7 +55,7 @@ const Dashboard = () => {
             const formData = new FormData();
             formData.append('file', file);
 
-            await fetch('http://localhost:8001/api/ingest/bulk', {
+            await fetch('http://localhost:8000/api/ingest/bulk', {
                 method: 'POST',
                 body: formData
             });
@@ -72,23 +72,23 @@ const Dashboard = () => {
     }, [currentPage]); // Re-fetch when page changes
 
     return (
-        <div className="p-8 max-w-[1600px] mx-auto">
+        <div className="p-6 lg:p-8 max-w-[1600px] mx-auto pt-8">
+            {/* Header */}
             <div className="flex justify-between items-center mb-8">
                 <div className="flex items-center gap-4">
-                    <img 
-                        src="/lic-logo-bg.png" 
-                        alt="LIC Logo" 
-                        className="h-20 w-20 object-cover flex-shrink-0"
-                        style={{
-                            filter: 'brightness(0.9) contrast(1.2) invert(1) hue-rotate(180deg) saturate(1.5)',
-                            mixBlendMode: 'lighten'
-                        }}
+                    <img
+                        src="/lic-logo-bg.png"
+                        alt="LIC Logo"
+                        className="h-16 w-16 object-cover flex-shrink-0"
                     />
                     <div>
-                        <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-pink-500">
+                        <h1
+                            className="text-2xl lg:text-3xl font-bold tracking-tight"
+                            style={{ color: '#001f5b' }}
+                        >
                             LIC Email Intelligence Platform
                         </h1>
-                        <p className="text-gray-400 mt-1">Real-time Claims & Policy Analysis Agent</p>
+                        <p className="text-gray-500 mt-0.5 text-sm">Real-time Claims & Policy Analysis Agent</p>
                     </div>
                 </div>
                 <ExportButton />
@@ -97,7 +97,7 @@ const Dashboard = () => {
             <PipelineHealth isIngesting={isIngesting} />
             <StatsGrid stats={stats} />
 
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-8">
                 <div className="lg:col-span-3">
                     <RecentEmails
                         emails={emails}
